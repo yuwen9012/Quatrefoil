@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+main{
+	display: flex;
+	margin-top: 30px;
+	justify-content:center;
+}
+
+.contain{
+	text-align: center;
+	background-color: #ffffff;
+	width: 450px;
+	height: 300px;
+}
+
+button{
+	align-items:center;
+	display: inline-block;
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 30px;
+	font-size: 14px;
+	width: 200px;
+	height: 35px;
+	margin: 0px 5px;
+	cursor: pointer;
+	
+}
+
+button>img{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.social_login_fb{
+	background-color: #1877f2;
+	color: #ffffff;
+}
+
+form> input{
+	display: block;
+	width: 300px;
+	height: 30px;
+	border-bottom: 1.5px solid #000000;  
+	border-top:0px;  
+	border-left:0px;  
+	border-right:0px;  
+	outline: none;
+	margin: 15px auto;
+	font-size: 14px;
+}
+
+form> input:focus{
+	border-bottom: 1.5px solid #409fac;
+}
+
+#login{
+	width: 80px;
+	height: 30px;
+	background-color: #ffffff;
+	border: 1.5px solid #409fac;
+	border-radius: 30px;
+	color: #409fac;
+	margin-top: 50px;
+}
+
+#login:hover{
+	background-color: #409fac;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.hint{
+	font-size:12px;
+}
+
+#go_to_register{
+	color:#409fac;
+}
