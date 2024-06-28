@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media (max-width: 700px){
+
+}
+
+@media (max-width: 300px){
+	nav{
+	    padding: 0px 20px;
+	}
+	
+}
