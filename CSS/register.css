@@ -27,7 +27,7 @@ main{
 	font-size:12px;
 }
 
-.login{
+.contain{
 	box-sizing: border-box;
 
 	display: flex;
@@ -92,24 +92,12 @@ form> input:focus{
 	border-bottom: 1.5px solid #409fac;
 }
 
-#register{
-	color: #409fac;
-	background-color: #ffffff;
-	box-sizing: border-box;
+form> div{
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-size: 14px;
-	font-weight: 600;
-	margin-top: 40px;
-	margin-bottom: 30px;
-	
-	width: 112px;
-	height: 33px;
-
-	border: 1.5px solid #409FAC;
-	border-radius: 30px;
 }
-
 
 .seperate{
 	display: flex;
@@ -157,52 +145,14 @@ h3{
 	font-size: 18px;
 }
 
-
-#go_register{
-	display:block;
-	text-decoration: none;
-	color: #FFFFFF;
-	box-sizing: border-box;
-	background-color: #409FAC;
-	justify-content: center;
-	align-items: center;
-	font-size: 14px;
-	font-weight: 600;
-	margin-top: 20px;
-	
-	width: 112px;
-	height: 33px;
-
-	border: 1.5px solid #409FAC;
-	border-radius: 30px;
-}
-
-
 #forget{
 	color:#409fac;
-}
-
-#login:hover{
-	background-color: #409fac;
-	border: none;
-	color: #ffffff;
-	cursor: pointer;
-}
-
-#go_register:hover{
-	background-color: #FFFFFF;
-	color: #409FAC;
 }
 
 .btn_social_login:hover{
 	background-color: #EEEEEE;
 }
 
-#error_msg{
-	color: #FF0000;
-	font-size: 12px;
-}
-
 .error_input{
-	border-bottom: 1.5px solid #FF0000;
+	border-bottom: 1.5px solid #FF0000; 
 }

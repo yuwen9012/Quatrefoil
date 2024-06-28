@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+main{
+	max-width: 1280px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 60px;
+	gap: 40px;
+}
+
+#revise_pwd{
+	display: none;
+}
+
+.option{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
+
+	width: 100%;
+	max-width: 600px;
+}
+
+.option_text{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.input_primary{
+	display: block;
+	margin: 15px auto;
+}
+
+#title{
+
+}
+
+#email{
+	
+}

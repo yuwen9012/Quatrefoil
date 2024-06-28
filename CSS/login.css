@@ -58,9 +58,9 @@ button{
 	background-color: #f2f2f2;
 	border: none;
 	border-radius: 30px;
-	font-size: 14px;
+	font-size: 12px;
 	width: 200px;
-	height: 35px;
+	height: 36px;
 	margin: 0px 5px;
 	cursor: pointer;	
 }
@@ -74,29 +74,16 @@ form{
 	width: 100%;
 }
 
-form> input{
-	display: block;
-	width: 100%;
-	max-width: 240px;
-	height: 30px;
-	border-bottom: 1.5px solid #000000; 
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	outline: none;
-	margin: 15px auto;
-	font-size: 14px;
-}
-
-form> input:focus{
-	border-bottom: 1.5px solid #409fac;
-}
-
 form> div{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+form>input{
+	display: block;
+	margin: 15px auto;
 }
 
 .seperate{
@@ -152,9 +139,4 @@ h3{
 
 .btn_social_login:hover{
 	background-color: #EEEEEE;
-}
-
-#error_msg{
-	color: #FF0000;
-	font-size: 12px;
 }

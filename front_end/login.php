@@ -39,8 +39,8 @@
       
       <h3>電子郵件登入</h3>
       <form method="post" id="form">
-        <input id="email" placeholder="email" required/>
-        <input id="userpwd" type="password" placeholder="密碼" required/>
+        <input class="input_primary" id="email" placeholder="email" required/>
+        <input class="input_primary" id="userpwd" type="password" placeholder="密碼" required/>
         <div><span id="error_msg"></span></div>
         <input class="btn primary" value="登入" type="submit"/>
       </form>

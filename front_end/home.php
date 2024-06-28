@@ -6,6 +6,7 @@
 <title>四季更褶</title>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../CSS/global.css">
 
 </head>
 <body>

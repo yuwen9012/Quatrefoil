@@ -9,6 +9,7 @@
 <script src="../javascript/session.js"></script>
 <script src="../javascript/register.js"></script>
 
+<link rel='stylesheet' type='text/css' href='../CSS/global.css'>
 <link rel='stylesheet' type='text/css' href='../CSS/register.css'>
 
 </head>
@@ -19,7 +20,7 @@
   ?>
 
 <main>  
-  <div class='login'>
+  <div class='contain'>
       <h3>快速註冊</h3>
     
       <div class="social_login">
@@ -38,8 +39,8 @@
         <input id="email" name="email" placeholder="email" required/>
         <input id="userpwd" name="userpwd" type="password" placeholder="請輸入長度6-30位之間密碼" required/>
         <input id="pwdConf" type="password" placeholder="確認密碼" required/>
-        <div id="error_msg"></div>
-        <input id="register" value="確認註冊" type="submit"/>
+        <div><span id="error_msg"></span></div>
+        <input class="btn primary" value="確認註冊" type="submit"/>
         <p id="result"></p>
       </form>
       
