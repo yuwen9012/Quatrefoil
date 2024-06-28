@@ -1,0 +1,140 @@
+
+/* 重置body的預設邊距，並設置高度 */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+
+/* 頁面的上半部分樣式 */
+.top-section {
+    display: flex;
+    align-items: flex-start; /* 调整垂直对齐方式 */
+    background-color: #409FAC; /* FF7F8C with 30% opacity */
+    height: auto; /* 确保父容器高度适应子元素 */
+    box-sizing: border-box; /* 确保内边距不会增加容器尺寸 */
+}
+
+/* 上半部分左半邊樣式 */
+.left-side {
+    width: 40%; /* 左半邊佔50% */
+    background-color: white;
+    border-radius: 7px; /* 圓角 */
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2); /* 可選陰影效果 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    position: relative; /* 使 .left-side 成为 .corner-image 的定位父元素 */
+    padding: 2%;
+    margin: 10% 2% 30% 8%; /* 添加外边距 */
+    box-sizing: border-box; /* 确保内边距不会增加容器尺寸 */
+
+}
+/* 上半部分右半邊樣式 */
+.right-side {
+    width: 40%; /* 左半邊佔50% */
+    background-color: white;
+    border-radius: 7px; /* 圓角 */
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2); /* 可選陰影效果 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    position: relative; /* 使 .left-side 成为 .corner-image 的定位父元素 */
+    padding: 2% ;
+    margin: 10% 8% 30% 2%; /* 添加外边距 */
+    box-sizing: border-box; /* 确保内边距不会增加容器尺寸 */
+}
+
+
+
+
+
+.highlight {
+    font-size: 32px;
+    font-weight: bold;
+    color: #409FAC; 
+    display: block; /* 转为块级元素 */
+    text-align: center; /* 水平居中 */
+    margin: 0 auto; /* 居中 */
+    width: fit-content; /* 根据内容自适应宽度 */
+}
+.small_highlight {
+    font-size: 16px;
+    color: #409FAC; 
+    display: block; /* 转为块级元素 */
+    text-align: center; /* 水平居中 */
+    margin: 0 auto; /* 居中 */
+    width: fit-content; /* 根据内容自适应宽度 */
+}
+.text {
+    font-size: 14px;
+    color: #333;
+}
+.submit-button-container {
+    display: flex;
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    margin-top: 30px; /* Adjust as needed */
+}
+.submit-button {
+	padding: 5px 30px;
+	background-color: #409FAC;
+	color: white;
+	border: none;
+	border-radius: 30px; /* 设置圆角 */
+	cursor: pointer;
+	margin-top: 2px; /* 与表单内容保持一定距离 */
+	justify-content: center; /* 在水平方向上居中对齐 */
+	align-items: center; /* 在垂直方向上居中对齐 */
+    font-size: 14px;
+}
+
+
+
+
+/* 頁面的下半部分樣式 */
+.bottom-section {
+    height: 70%;
+    background-color: white; /* 更改此顏色以符合需求 */
+}
+ 
+
+
+
+.Winter {
+    position: absolute;
+    top: -65px; /* Adjust as needed */
+    left: -30px; /* Adjust as needed */
+    width: 140px; /* Adjust as needed */
+    height: 140px; /* Adjust as needed */
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.2)); /* 添加阴影效果 */
+}
+.Summer {
+    position: absolute;
+    bottom: -60px; /* Adjust as needed */
+    right: -30px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.2)); /* 添加阴影效果 */
+}
+.Autumn {
+    position: absolute;
+    top: -85px; /* Adjust as needed */
+    left: -30px; /* Adjust as needed */
+    width: 155px; /* Adjust as needed */
+    height: 155px; /* Adjust as needed */
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.2)); /* 添加阴影效果 */
+}
+.Spring {
+    position: absolute;
+    bottom: -55px; /* Adjust as needed */
+    right: -55px; /* Adjust as needed */
+    width: 145px; /* Adjust as needed */
+    height: 145px; /* Adjust as needed */
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.2)); /* 添加阴影效果 */
+    transform: scaleX(-1); /* 水平翻转 */
+}

@@ -1,0 +1,91 @@
+
+/* 重置body的預設邊距，並設置高度 */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+
+/* 頁面的上半部分樣式 */
+.top-section {
+    display: flex;
+    align-items: flex-start; /* 调整垂直对齐方式 */
+    background-color: rgba(236, 163, 25, 0.3); /* FF7F8C with 30% opacity */
+    height: auto; /* 确保父容器高度适应子元素 */
+    box-sizing: border-box; /* 确保内边距不会增加容器尺寸 */
+}
+
+/* 上半部分左半邊樣式 */
+.left-side {
+    width: 50%; /* 左半邊佔50% */
+    background-color: white;
+    border-radius: 7px; /* 圓角 */
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2); /* 可選陰影效果 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    position: relative; /* 使 .left-side 成为 .corner-image 的定位父元素 */
+    padding: 2% 5%;
+    margin: 8% 5%; /* 添加外边距 */
+    box-sizing: border-box; /* 确保内边距不会增加容器尺寸 */
+
+}
+
+/* 上半部分右半邊樣式 */
+.right-side {
+    width: 35%; /* 右半邊佔35% */
+    background-color: white;
+    border-radius: 7px; /* 圓角 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    position: relative; /* 使 .left-side 成为 .corner-image 的定位父元素 */
+    padding: 5%;
+    margin: 8% 5% 8% 0%; /* 添加外边距 */
+    box-sizing: border-box; /* 确保内边距不会增加容器尺寸 */
+    flex-grow: 1; /* 使右侧容器占满可用空间，与左侧容器等高 */
+}
+
+
+
+.corner-image {
+    position: absolute;
+    top: -110px; /* Adjust as needed */
+    right: -130px; /* Adjust as needed */
+    width: 245px; /* Adjust as needed */
+    height: 230px; /* Adjust as needed */
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.2)); /* 添加阴影效果 */
+}
+
+.title {
+    font-size: 16px;
+    font-weight: normal; 
+    color: #333;
+}
+
+.highlight {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ECA319; /* 粉紅色 */
+}
+
+.text {
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* 頁面的下半部分樣式 */
+.bottom-section {
+    height: 70%;
+    background-color: white; /* 更改此顏色以符合需求 */
+}
+ 
