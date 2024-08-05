@@ -1,0 +1,239 @@
+.block1{
+   height: 67vh;
+}
+
+.block2{
+   height: 110vh;
+   background-color: #D1E7EB;
+}
+
+.block3{
+   height: 100vh;
+   background-color: #D1E7EB;
+}
+
+.block4{
+   height: 100vh;
+   background-color: #D1E7EB;
+}
+
+.block5{
+   height: 10vh;
+}
+
+h3{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 87px;
+display: flex;
+text-align: center;
+letter-spacing: 0.2em;
+color: #409FAC;
+padding-top: 20pz;
+}
+
+h2{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2em;
+padding-left: 180px;
+padding-top: 25px;
+
+color: #685D5D;
+}
+
+.Image1-1{
+    width: 100%;
+    height:65%;
+    padding-right: 20px;
+
+}
+
+.Image1-2{
+    width: 80%;
+    height:70%;
+    padding-left: 200px;
+    padding-top: 40px;
+}
+
+.Image4-1{
+   width:70%;
+   height:75%;
+   padding-right: 40px;
+   padding-bottom: 100px;
+   padding-left: 50px;
+}
+
+.Image4-2{
+   width: 50%;
+   height:50%;
+   padding-right: 50px;
+}
+
+.Image4-3{
+   width: 70%;
+   height:75%;
+   padding-bottom: 100px;
+   padding-right: 50px;
+}
+
+.Image4-4{
+   width: 50%;
+   height:50%;
+   padding-right: 50px;
+}
+
+.Image3-1{
+   width: 45%;
+   height:100%;
+}
+
+.box2-1 {
+   font-family: 'Zen Kaku Gothic Antique';
+   letter-spacing: 0.2em;
+   font-weight: 700;
+   width: 500px;
+   height: 80px;
+   background-color: #409FAC;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 25px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 30px;
+}
+
+.box2-2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 1200px;
+   height: 500px;
+   background-color: #F8F7F3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 30px;
+   padding-top: 20px;
+}
+
+.box3-2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 1200px;
+   height: 500px;
+   background-color: #F8F7F3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 30px;
+   padding-top: 20px;
+}
+
+.box4-2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 1200px;
+   height: 500px;
+   background-color: #F8F7F3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 25px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 30px;
+   padding-top: 20px;
+}
+
+
+.p2-1{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+letter-spacing: 0.2em;
+margin: 10px 0;
+color: #EC989F;
+display: block;
+}
+.p2-2{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+letter-spacing: 0.2em;
+margin: 10px 0;
+color: #E3A127;
+display: block;
+}
+.p2-3{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+letter-spacing: 0.2em;
+margin: 10px 0;
+color: #466986;
+display: block;
+}
+
+.p3-1{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+letter-spacing: 0.2em;
+margin: 10px 0;
+color: #0D5269;
+display: block;
+}
+
+.p3-2{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+letter-spacing: 0.2em;
+margin: 10px 0;
+color: #808080;
+display: block;
+justify-content: center;
+padding-top: 10px;
+}
+
+.p-5{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2em;
+
+color: #409FAC;
+}
+
+.center-section1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; /* 確保內容垂直排列 */
+}
