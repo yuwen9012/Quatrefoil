@@ -26,9 +26,8 @@
       <a href="#"><img src="./images/icon/brand.png" width="120px" height="27px"/></a>
     </div>
     <div class='menu_center'>
-      <a href="#">四季色彩測驗</a>
+      <a href="test_new.php">四季色彩測驗</a>
       <a href="#">四季商城</a>
-      <a href="#">四季論壇</a>
     </div>
     <div class='menu_right'>
       <a href="#"><img src="./images/icon/shirt-black.png" width="20px" height="20px"/></a>
@@ -91,21 +90,30 @@
 
             <div class="col-md-10 center-section">
                 <div class="box2-2">
-                    <div class="col-md-1 left-section">
-                        <img class="Image1-1" src="images/home4.png" alt="Description of the image" class="img-fluid">
-                        <img class="Image1-1" src="images/home5.png" alt="Description of the image" class="img-fluid">
-                    </div>
-                    <div class="col-md-10 center-section">
-                         <p class="p2-1">你/妳有沒有經歷過買衣服時的挫敗感，買的衣服在模特兒身上看起來很漂亮，但不知何故穿在你/妳身上卻很平淡？</p>
-                         <p class="p2-2">或者更糟的是，發現你最喜歡的顏色雖然迷人<br>卻讓你看起來憔悴甚至疲憊嗎？</p>
-                         <p class="p2-3">品牌創始人也曾面臨過這樣的困境。和許多人一樣，會被特定的顏色或model的視覺效果所吸引，<br>
-                            經常購買特定色系的衣服。然而，結果常常令人失望...<br>但在一次偶然的邂逅裡，他的好奇心被激發，開始
-                        探索四季色彩的奧秘</p>
-                    </div>
+                    <div class="row">
+                        <div class="col-md-1 left-section">
+                        <img class="Image2-1" src="images/home4.png" alt="Description of the image" class="img-fluid">
+                        </div>
+                        <div class="col-md-10 right-section">
+                         <p class="p2-1">你/妳有沒有經歷過買衣服時的挫敗感，買的衣服在模特兒身上看起來很漂</p>
+                         <p class="p2-1">亮，但不知何故穿在你/妳身上卻很平淡？</p>
+                         <p class="p2-2">或者更糟的是，發現你最喜歡的顏色雖然迷人</p>
+                         <p class="p2-2">卻讓你看起來憔悴甚至疲憊？</p>
+                         <p class="p2-3">品牌創始人也曾面臨過這樣的困境。和許多人一樣，會被特定的顏色或model的視覺效果所吸引，經常購買特定色系的衣服。然而，結果常常令人失望...</p>
+                         <p class="p2-3">但在一次偶然的邂逅裡，他的好奇心被激發，開始探索四季色彩的奧秘。</p>
+                        </div>
+                        <div class="col-md-1 left-section">
+                            <img class="Image2-2" src="images/home5.png" alt="Description of the image" class="img-fluid">
+                        </div>
+                    </div>         
+                </div>
+                <div class="box2-3">
+                    <p class="p2-4">品牌願景：打造使每個人能夠擁抱自己獨特、消除與服裝選擇挫敗感的空間！</p>
+                </div>
 
-                     <div class="col-md-1 right-section">
-                     </div>
-                 </div>
+
+
+            </div>
             <div class="col-md-1 right-section">
             </div>
            </div>
@@ -201,4 +209,5 @@
 
 <body>
 </html>
+
 
