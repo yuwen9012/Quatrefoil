@@ -63,6 +63,22 @@ color: #685D5D;
     padding-top: 40px;
 }
 
+.Image2-1{
+    width: 150%;
+    height:100%;
+    padding-bottom: 250px;
+    position: relative;
+    bottom: 30px;
+}
+
+.Image2-2{
+   width: 170%;
+   height:40%;
+   position: relative;
+   right: 50px;
+   top: 50px;
+}
+
 .Image4-1{
    width:70%;
    height:75%;
@@ -128,6 +144,23 @@ color: #685D5D;
    padding-top: 20px;
 }
 
+.box2-3 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 1200px;
+   height: 100px;
+   background-color: #409FAC;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   padding-top: 50px;
+   position: relative;
+   bottom: 40px;
+}
+
 .box3-2 {
    font-family: 'Zen Kaku Gothic Antique';
    font-weight: 700;
@@ -171,7 +204,9 @@ letter-spacing: 0.2em;
 margin: 10px 0;
 color: #EC989F;
 display: block;
+text-align: left;
 }
+
 .p2-2{
 font-family: 'Zen Kaku Gothic Antique';
 font-style: normal;
@@ -181,7 +216,11 @@ letter-spacing: 0.2em;
 margin: 10px 0;
 color: #E3A127;
 display: block;
+text-align: right;
+position: relative;
 }
+
+
 .p2-3{
 font-family: 'Zen Kaku Gothic Antique';
 font-style: normal;
@@ -191,7 +230,23 @@ letter-spacing: 0.2em;
 margin: 10px 0;
 color: #466986;
 display: block;
+text-align: left;
 }
+
+.p2-4{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+letter-spacing: 0.2em;
+margin: 10px 0;
+color: #FFFFFF;
+display: block;
+text-align: left;
+position: relative;
+bottom: 25px;
+}
+
 
 .p3-1{
 font-family: 'Zen Kaku Gothic Antique';
@@ -231,6 +286,12 @@ letter-spacing: 0.2em;
 color: #409FAC;
 }
 
+.center-section1 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; /* 確保內容垂直排列 */
+}
 .center-section1 {
    display: flex;
    justify-content: center;
