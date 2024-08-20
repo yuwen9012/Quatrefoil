@@ -135,3 +135,113 @@
    align-items: center;
    color: #685D5D;
 }
+
+.card-title{
+margin: 0 auto;
+width: 214px;
+height: 17px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+padding-top: 5px;
+color: #000000;
+}
+
+.card-price{
+margin: 0 auto;
+width: 214px;
+height: 17px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 17px;
+padding-top: 8px;
+color: #EE4D2D;
+}
+
+.card-content{
+margin: 0 auto;
+width: 214px;
+height: 17px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 17px;
+color: #000000;
+padding-top: 10px;
+}
+
+.container {
+    justify-content: center; /* 讓內容在容器中水平居中 */
+    border-top: 2px dashed #f3ddb3; /* 添加一條線到區塊的上方 */
+    padding-top: 30px; /* 線與內容之間的間距 */
+}
+
+.image-wrapper {
+    display: flex;
+    gap: 20px; /* 圖片項目之間的間距 */
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-item img {
+    height: 200px; /* 設定圖片的高度 */
+    width: auto; /* 使寬度自動調整以保持圖片比例 */
+}
+
+.image-item input {
+    margin-bottom: 20px; /* 輸入框與圖片之間的間距 */
+    text-align: center;
+    width: 50px;
+    border: 2px solid #409FAC;
+    height: 40px;
+    font-weight: 700;
+    justify-content: center;
+
+}
+
+.submit-btn{
+   background-color: #409FAC;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0rem 0.5rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    position: relative;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px ;
+    left: 660px;
+    top: 20px;
+
+}
+
+.p-4{
+    font-family: 'Zen Kaku Gothic Antique';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #409FAC;
+    position: relative;
+    left: 12px;
+    top: 50px;
+}
