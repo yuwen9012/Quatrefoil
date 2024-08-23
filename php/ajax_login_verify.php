@@ -13,15 +13,20 @@ if(!$select_db) {
 	$email= $_POST['email'];
 	$userpwd= $_POST['userpwd'];
 
-	$sql_query= $db_link->prepare("SELECT * FROM users WHERE email= ? AND userpwd= ?");
+	$sql_query= $db_link->prepare("SELECT id, email, premium FROM users WHERE email= ? AND userpwd= ?");
 	$sql_query->bind_param("ss", $email, $userpwd);
 	$sql_query->execute();
 
 	$result = $sql_query->get_result();
 
 	if ($result-> num_rows >0) {
+		
+		$data = $result->fetch_assoc();
+
 		$_SESSION['loggedin'] = true;
+		$_SESSION['id']= $data['id'];
         $_SESSION['email'] = $email;
+        $_SESSION['premium'] = $data['premium'];
 		$response['state']= True;
 	}else{
 		$response['state']= False;

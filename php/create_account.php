@@ -22,7 +22,6 @@ if(!$select_db) {
    		} else {
         	$response = "發生錯誤，請稍後再試(insert error)";
     	}
-
 		
 	} else {
 		$response = "發生錯誤，請稍後再試(null data)";
@@ -31,9 +30,9 @@ if(!$select_db) {
 }
 
 if ($state==1) {
-	echo "<script type='text/javascript'>alert('$response'); location.href = '../front_end/login.php';</script>";
+	echo "<script type='text/javascript'>alert('$response'); location.href = '../login.php';</script>";
 } elseif ($state==0) {
-	echo "<script type='text/javascript'>alert('$response'); location.href = '../front_end/register.php';</script>";
+	echo "<script type='text/javascript'>alert('$response'); location.href = '../register.php';</script>";
 }
 
 
