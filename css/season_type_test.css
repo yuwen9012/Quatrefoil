@@ -1,0 +1,374 @@
+.block1{
+   height: 100vh;
+   background-color: #409FAC;
+}
+
+.block2{
+   height: 120vh;
+   background-color: #D1E7EB;
+}
+
+.box1-1 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 400px;
+   height:350px;
+   background-color: #EEF6F7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 30px;
+   position: relative;
+   bottom: 35px;
+
+}
+
+.box1-2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 300px;
+   height:100px;
+   background-color: #EEF6F7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 10px;
+   padding-top: 20px;
+   position: relative;
+   bottom: 30px;
+
+}
+
+.box2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 1000px;
+   height: 500px;
+   background-color: #F8F7F3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 30px;
+   padding-top: 20px;
+}
+
+.text1-1{
+   position: absolute;
+   height: 40px;
+   left: 880px;
+   right: 111px;
+   top: 230px;
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 58px;
+   display: flex;
+   align-items: center;
+   color: #FFFFFF;
+}
+
+.text1-2{
+   position: absolute;
+   height: 40px;
+   left: 766px;
+   right: 111px;
+   top: 400px;
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 34px;
+   line-height: 58px;
+   display: flex;
+   align-items: center;
+   color: #FFFFFF;
+}
+
+.text2-1{
+position: relative;
+width: 864px;
+height: 58px;
+left: 20px;
+bottom: 80px;
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: medium;
+font-size: 36px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #000000;
+text-align: left;
+}
+
+.text2-2{
+position: relative;
+width: 864px;
+height: 58px;
+left: 30px;
+bottom: 60px;
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-size: 20px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #000000;
+justify-content: center;
+text-align: left;
+line-height: 1.6;
+}
+
+.text2-3{
+position: relative;
+width: 864px;
+height: 58px;
+left: 30px;
+bottom: 40px;
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: medium;
+font-size: 30px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #000000;
+text-align: left;
+}
+
+.text2-4{
+position: relative;
+width: 864px;
+height: 58px;
+left: 30px;
+top: 20px;
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-size: 20px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #000000;
+justify-content: center;
+text-align: left;
+line-height: 1.6;
+}
+
+.Image1-1{
+   position: relative;
+   width: 236px;
+   height: 300px;
+   right: 100px;
+   bottom: 170px;
+}
+
+.Image1-2{
+   position: relative;
+   width: 200px;
+   height: 150px;
+   right: 10px;
+   cursor: pointer;
+}
+
+.Image2-1{
+   position: relative;
+   width: 150px;
+   height: 150px;
+   right: 10px;
+   bottom: 120px;
+}
+
+.Image2-2{
+   position: relative;
+   width: 150px;
+   height: 150px;
+   left: 1000px;
+   bottom: 270px;
+}
+
+.Image2-3{
+   position: relative;
+   width: 200px;
+   height: 200px;
+   left: 70px;
+   top: 130px;
+}
+
+.Image2-4{
+   position: relative;
+   width: 200px;
+   height: 200px;
+   left: 1150px;
+   bottom: 250px;
+}
+
+.button-upload {
+   background-color: #409FAC;
+    color: #fff;
+    border-radius: 20px;
+    padding: 0rem 0.5rem;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    position: relative;
+    left: 40px;
+    top: 60px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 20px ;      
+
+}
+
+.btn1{
+   color: #fff;
+   background-color: #FFFFFF;
+   position: relative;
+   right: 50px;
+   top: 20px;
+}
+
+.btn2{
+   color: #fff;
+   background-color: #FFFFFF;
+   position: relative;
+   top: 20px;
+   left:5px;
+}
+
+.btn3{
+   color: #fff;
+   background-color: #FFFFFF;
+   position: relative;
+   right: 120px;
+   top: 20px;
+}
+
+.btn4{
+   color: #fff;
+   background-color: #FFFFFF;
+   position: relative;
+   top: 20px;
+   right:60px;
+}
+
+/*選單文字*/
+
+.p1-1{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #409FAC;
+position: relative;
+bottom: 20px;
+}
+
+.p1-2{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #409FAC;
+position: relative;
+bottom: 20px;
+left: 60px;
+}
+
+.p1-3{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #409FAC;
+position: relative;
+bottom: 20px;
+left: 20px;
+}
+
+.p1-4{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #409FAC;
+position: relative;
+bottom: 20px;
+left: 40px;
+}
+
+/*第一區塊說明文字*/
+
+.t1{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #D0EDF1;
+position: relative;
+bottom: 50px;
+left: 40px;
+
+}
+
+.t2{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #D0EDF1;
+position: relative;
+bottom: 50px;
+left: 70px;
+
+}
+
+.t3{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 52px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+position: relative;
+bottom: 20px;
+left: 10px;
+
+}
