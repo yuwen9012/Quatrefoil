@@ -29,21 +29,46 @@ function pwdConf_check() {
 }
 
 $(document).ready( function() {
-	var email;
-	get_session(email);
 
-	$("#revise_pwd").submit(function (event) {
+	get_session(function(data) {
+		$("#email").text(data.email);
+	});
+
+	$("#newpwd").on("input", userpwd_check);
+
+	$("#pwdConf").on("input", pwdConf_check);
+
+	$("#revise_pwd").on("click", function(){
+		var button_class= $("#revise_pwd").attr('class');
+
+		if (button_class.includes('primary')){
+			$(this).text('取消');
+			$(this).removeClass('primary');
+			$(this).addClass('danger');
+
+			$("#form").css({'display': 'block'});
+		} else if (button_class.includes('danger')){
+			$(this).text('修改');
+			$(this).removeClass('danger');
+			$(this).addClass('primary');
+
+			$("#form").css({'display': 'none'});
+		}
+	});
+
+	$("#form").submit(function (event) {
 		event.preventDefault();
 		var status= userpwd_check() && pwdConf_check();
 		if (status){
+			var oldpwd= $("#oldpwd").val();
 			var newpwd= $("#newpwd").val();
 			$.ajax({
-        		url: "../back_end/ajax_revise_pwd.php",
+        		url: "../php/ajax_revise_pwd.php",
         		type: "POST",
-        		data: { "newpwd": newpwd },
+        		data: { "oldpwd": oldpwd ,"newpwd": newpwd },
         		dataType: 'json',
         		success: function(response) {
-                	$("#error_msg").text(response.msg);
+                	$("#error_msg").text(response);
         		},
         		error: function(jqXHR) {
             		console.log(jqXHR.readyState+": "+ jqXHR.status);

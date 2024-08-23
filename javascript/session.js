@@ -1,14 +1,13 @@
-function get_session(email_sess){
+function get_session(callback){
 	$.ajax({
-		url:"../back_end/ajax_check_sess.php",
+		url:"../php/ajax_check_sess.php",
 		type:"POST",
 		dataType: 'json',
 		success: function(response) {
 			if (!response.loggedin){
 				window.location.href="login.php";
 			} else {
-				email_sess= response.email;
-				console.log(email_sess);
+				callback(response);
 			}
 		},
 		error: function(jqXHR) {
@@ -19,7 +18,7 @@ function get_session(email_sess){
 
 function check_session() {
 	$.ajax({
-		url:"../back_end/ajax_check_sess.php",
+		url:"../php/ajax_check_sess.php",
 		type:"POST",
 		dataType: 'json',
 		success: function(response) {

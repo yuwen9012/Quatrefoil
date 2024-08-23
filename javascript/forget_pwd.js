@@ -13,14 +13,13 @@ $(document).ready(function () {
         	
     	} else{
         	$.ajax({
-        		url: "../back_end/ajax_email_availability.php",
+        		url: "../php/ajax_email_availability.php",
         		type: "POST",
         		data: { "email": email },
         		dataType: 'json',
         		success: function(response) {
             		if (response.state) {
-            			$("#error_msg").text(response.msg);
-            			//$('#form').unbind('submit').submit();
+            			$('#form').unbind('submit').submit();
             		} else {
                 		$("#error_msg").text(response.msg);
             		}

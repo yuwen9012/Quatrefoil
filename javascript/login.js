@@ -7,7 +7,7 @@ function login_verify(){
 	var userpwd= $("#userpwd").val();
 
 	$.ajax({
-		url:"../back_end/ajax_login_verify.php",
+		url:"../php/ajax_login_verify.php",
 		type:"POST",
 		data: {"email": email, "userpwd": userpwd},
 		dataType:"json",

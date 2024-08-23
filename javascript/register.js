@@ -16,7 +16,7 @@ function email_check() {
 function email_availability(){
 	var email= $("#email").val();
 	$.ajax({
-        url: "../back_end/ajax_email_availability.php",
+        url: "../php/ajax_email_availability.php",
         type: "POST",
         data: { "email": email },
         dataType: 'json',
