@@ -21,22 +21,7 @@
     <title>home</title>
 </head>
 <body>
-     <nav>
-    <div class='brand'>
-      <a href="#"><img src="./images/icon/brand.png" width="120px" height="27px"/></a>
-    </div>
-    <div class='menu_center'>
-      <a href="test_new.php">四季色彩測驗</a>
-      <a href="#">四季商城</a>
-    </div>
-    <div class='menu_right'>
-      <a href="#"><img src="./images/icon/shirt-black.png" width="20px" height="20px"/></a>
-      <a href="#"><img src="./images/icon/user.png" width="20px" height="20px"/></a>
-    </div>
-  </nav>
-
-
-             
+     <? include "navbar.php"?>            
   <br>                
   <br>                
 
