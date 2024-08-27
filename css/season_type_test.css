@@ -1,12 +1,86 @@
-.block1{
-   height: 100vh;
-   background-color: #409FAC;
+body, html {
+    overflow-x: hidden;
 }
-
 .block2{
-   height: 120vh;
+   height: flex;
    background-color: #D1E7EB;
 }
+
+.block5{
+   height: flex;
+}
+
+.p-5 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 29px;
+   letter-spacing: 0.2em;
+   color: #409FAC;
+   text-align: center; /* 這裡確保多行文字居中對齊 */
+}
+
+.box2-1 {
+   font-family: 'Zen Kaku Gothic Antique';
+   letter-spacing: 0.2em;
+   font-weight: 700;
+   width: 576px;
+   height: 80px;
+   background-color: #409FAC;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 25px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   border-radius: 30px;
+}
+@media (max-width: 767.98px) {
+   .box2-1 {
+     font-size: 20px;
+     width: 100%;
+   }
+ }
+
+.box2-2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-weight: 700;
+   width: 100%;
+   background-color: #F8F7F3;
+   color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   border-radius: 30px;
+   padding: 20px; /* 使用 padding 控制內邊距，而不是 padding-top */
+   display: flex;
+   flex-direction: column; /* 保持多行文字換行 */
+   justify-content: center; /* 讓內容垂直居中 */
+   text-align: center; /* 讓文字在水平方向居中 */
+   box-sizing: border-box; /* 確保 padding 被包含在寬度內 */
+}
+
+
+
+.p2-1 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   letter-spacing: 0.2em;
+   margin: 10px 0;
+   color: black;
+   display: block;
+   text-align: left;
+ }
+ 
+ 
+ /* 當螢幕寬度小於 992px 時應用以下樣式 */
+ @media (max-width: 991.98px) {
+   .p2-1, .p2-2, .p2-3, .p2-4 {
+     font-size: 18px;
+   }
+ }
 
 .box1-1 {
    font-family: 'Zen Kaku Gothic Antique';
@@ -24,6 +98,14 @@
    position: relative;
    bottom: 35px;
 
+}
+
+@media (max-width: 768px) {
+   .box1-1 {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+   }
 }
 
 .box1-2 {
@@ -45,124 +127,6 @@
 
 }
 
-.box2 {
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width: 1000px;
-   height: 500px;
-   background-color: #F8F7F3;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   text-align: center;
-   border-radius: 30px;
-   padding-top: 20px;
-}
-
-.text1-1{
-   position: absolute;
-   height: 40px;
-   left: 880px;
-   right: 111px;
-   top: 230px;
-   font-family: 'Zen Kaku Gothic Antique';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 28px;
-   line-height: 58px;
-   display: flex;
-   align-items: center;
-   color: #FFFFFF;
-}
-
-.text1-2{
-   position: absolute;
-   height: 40px;
-   left: 766px;
-   right: 111px;
-   top: 400px;
-   font-family: 'Zen Kaku Gothic Antique';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 34px;
-   line-height: 58px;
-   display: flex;
-   align-items: center;
-   color: #FFFFFF;
-}
-
-.text2-1{
-position: relative;
-width: 864px;
-height: 58px;
-left: 20px;
-bottom: 80px;
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-weight: medium;
-font-size: 36px;
-line-height: 52px;
-display: flex;
-align-items: center;
-color: #000000;
-text-align: left;
-}
-
-.text2-2{
-position: relative;
-width: 864px;
-height: 58px;
-left: 30px;
-bottom: 60px;
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-size: 20px;
-line-height: 52px;
-display: flex;
-align-items: center;
-color: #000000;
-justify-content: center;
-text-align: left;
-line-height: 1.6;
-}
-
-.text2-3{
-position: relative;
-width: 864px;
-height: 58px;
-left: 30px;
-bottom: 40px;
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-weight: medium;
-font-size: 30px;
-line-height: 52px;
-display: flex;
-align-items: center;
-color: #000000;
-text-align: left;
-}
-
-.text2-4{
-position: relative;
-width: 864px;
-height: 58px;
-left: 30px;
-top: 20px;
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-size: 20px;
-line-height: 52px;
-display: flex;
-align-items: center;
-color: #000000;
-justify-content: center;
-text-align: left;
-line-height: 1.6;
-}
-
 .Image1-1{
    position: relative;
    width: 236px;
@@ -175,8 +139,8 @@ line-height: 1.6;
    position: relative;
    width: 200px;
    height: 150px;
-   right: 10px;
    cursor: pointer;
+   top: 15px;
 }
 
 .Image2-1{
@@ -184,36 +148,50 @@ line-height: 1.6;
    width: 150px;
    height: 150px;
    right: 10px;
-   bottom: 120px;
+   bottom: 48px;
 }
 
 .Image2-2{
    position: relative;
    width: 150px;
    height: 150px;
-   left: 1000px;
-   bottom: 270px;
+   bottom: 48px;
+   right: 100px;
+}
+
+@media (max-width: 768px) {
+   .Image2-2,.Image2-3 {
+       display: none ;
+   }
 }
 
 .Image2-3{
    position: relative;
    width: 200px;
    height: 200px;
-   left: 70px;
-   top: 130px;
+   top: 400px;
+   right:130px;
 }
 
 .Image2-4{
    position: relative;
    width: 200px;
    height: 200px;
-   left: 1150px;
-   bottom: 250px;
+   top: 400px;
+}
+
+@media (max-width: 768px) {
+      .Image2-4 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      top: 10px;
+   }
 }
 
 .button-upload {
-   background-color: #409FAC;
-    color: #fff;
+   background-color: #D1E7EB;
+    color: #409FAC;
     border-radius: 20px;
     padding: 0rem 0.5rem;
     transition: background-color 0.3s ease;
@@ -233,37 +211,71 @@ line-height: 1.6;
 
 }
 
-.btn1{
-   color: #fff;
-   background-color: #FFFFFF;
-   position: relative;
-   right: 50px;
-   top: 20px;
+/* 隱藏預設的 radio 按鈕 */
+.btn{
+    display: none;
 }
 
-.btn2{
-   color: #fff;
-   background-color: #FFFFFF;
-   position: relative;
-   top: 20px;
-   left:5px;
+/* 自訂按鈕樣式 */
+.custom-btn {
+    display: inline-block;
+    width: 35px; /* 按鈕寬度，應與高度相等 */
+    height: 35px; /* 按鈕高度，應與寬度相等 */
+    border: 2px solid #409FAC; /* 邊框顏色 */
+    background-color: transparent; /* 背景透明 */
+    border-radius: 50%; /* 設置為圓形 */
+    cursor: pointer; /* 手形指標 */
+    text-align: center; /* 文字居中 */
+    line-height: 60px; /* 文字垂直居中 */
+    margin-right: 50px; /* 按鈕間距 */
+    margin-top: 20px;
 }
 
-.btn3{
-   color: #fff;
-   background-color: #FFFFFF;
-   position: relative;
-   right: 120px;
-   top: 20px;
+.custom-btn1 {
+    display: inline-block;
+    width: 35px; /* 按鈕寬度，應與高度相等 */
+    height: 35px; /* 按鈕高度，應與寬度相等 */
+    border: 2px solid #409FAC; /* 邊框顏色 */
+    background-color: transparent; /* 背景透明 */
+    border-radius: 50%; /* 設置為圓形 */
+    cursor: pointer; /* 手形指標 */
+    text-align: center; /* 文字居中 */
+    line-height: 60px; /* 文字垂直居中 */
+    margin-right: 50px; /* 按鈕間距 */
+    margin-top: 20px;
+    right: 55px;
+    position: relative;
 }
 
-.btn4{
-   color: #fff;
-   background-color: #FFFFFF;
-   position: relative;
-   top: 20px;
-   right:60px;
+.custom-btn2 {
+    display: inline-block;
+    width: 35px; /* 按鈕寬度，應與高度相等 */
+    height: 35px; /* 按鈕高度，應與寬度相等 */
+    border: 2px solid #409FAC; /* 邊框顏色 */
+    background-color: transparent; /* 背景透明 */
+    border-radius: 50%; /* 設置為圓形 */
+    cursor: pointer; /* 手形指標 */
+    text-align: center; /* 文字居中 */
+    line-height: 60px; /* 文字垂直居中 */
+    margin-right: 50px; /* 按鈕間距 */
+    margin-top: 20px;
+    right: 35px;
+    position: relative;
 }
+
+.btn:checked + .custom-btn{
+    background-color: #409FAC; /* 被選中的按鈕背景顏色 */
+    color: white; /* 被選中的按鈕文字顏色 */
+}
+.btn:checked + .custom-btn1{
+    background-color: #409FAC; /* 被選中的按鈕背景顏色 */
+    color: white; /* 被選中的按鈕文字顏色 */
+}
+.btn:checked + .custom-btn2{
+    background-color: #409FAC; /* 被選中的按鈕背景顏色 */
+    color: white; /* 被選中的按鈕文字顏色 */
+}
+
 
 /*選單文字*/
 
@@ -279,6 +291,8 @@ text-align: center;
 color: #409FAC;
 position: relative;
 bottom: 20px;
+left: 55px;
+white-space: nowrap;
 }
 
 .p1-2{
@@ -293,7 +307,8 @@ text-align: center;
 color: #409FAC;
 position: relative;
 bottom: 20px;
-left: 60px;
+left: 115px;
+white-space: nowrap;
 }
 
 .p1-3{
@@ -308,7 +323,8 @@ text-align: center;
 color: #409FAC;
 position: relative;
 bottom: 20px;
-left: 20px;
+left: 80px;
+white-space: nowrap;
 }
 
 .p1-4{
@@ -323,7 +339,40 @@ text-align: center;
 color: #409FAC;
 position: relative;
 bottom: 20px;
-left: 40px;
+left: 100px;
+white-space: nowrap;
+}
+
+.p1-5{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #409FAC;
+position: relative;
+bottom: 20px;
+left: 70px;
+white-space: nowrap;
+}
+
+.p1-6{
+font-family: 'Zen Kaku Gothic Antique';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #409FAC;
+position: relative;
+bottom: 20px;
+left: 100px;
+white-space: nowrap;
 }
 
 /*第一區塊說明文字*/
@@ -353,7 +402,7 @@ display: flex;
 align-items: center;
 color: #D0EDF1;
 position: relative;
-bottom: 50px;
+bottom: 30px;
 left: 70px;
 
 }
@@ -362,13 +411,13 @@ left: 70px;
 font-family: 'Zen Kaku Gothic Antique';
 font-style: normal;
 font-weight: 700;
-font-size: 30px;
+font-size: 20px;
 line-height: 52px;
 display: flex;
 align-items: center;
 color: #FFFFFF;
 position: relative;
-bottom: 20px;
-left: 10px;
+left: 50px;
+top: 20px;
 
 }
