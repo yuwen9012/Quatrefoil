@@ -59,7 +59,7 @@
             <div>
             <br>               
                 <p class="smaller text-center">
-                    &nbsp;&nbsp;&nbsp;&nbsp;伴你探索色彩，定義專屬風格。
+                    &nbsp;&nbsp;伴你探索色彩，定義專屬風格。
                 </p>
             <br>
             </div>
