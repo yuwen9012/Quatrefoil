@@ -21,7 +21,7 @@
     <title>home</title>
 </head>
 <body>
-     <? include "navbar.php"?>            
+     <?php include "navbar.php"; ?>            
   <br>                
   <br>                
 
