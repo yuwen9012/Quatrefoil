@@ -1,25 +1,26 @@
 .block1{
-   height: 67vh;
+   height: flex;
 }
 
 .block2{
-   height: 110vh;
+   height: flex;
    background-color: #D1E7EB;
 }
 
 .block3{
-   height: 100vh;
+   height: flex;
    background-color: #D1E7EB;
 }
 
 .block4{
-   height: 100vh;
+   height: flex;
    background-color: #D1E7EB;
 }
 
 .block5{
-   height: 10vh;
+   height: flex;
 }
+
 
 h3{
 font-family: 'Zen Kaku Gothic Antique';
@@ -34,32 +35,59 @@ color: #409FAC;
 padding-top: 20pz;
 }
 
-h2{
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.2em;
-padding-left: 180px;
-padding-top: 25px;
-
-color: #685D5D;
+h2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px; /* 調整字體大小 */
+   text-align: center; /* 水平置中 */
+   letter-spacing: 0.2em;
+   padding-top: 25px;
+   color: #685D5D;
+   margin: 0 auto; /* 確保文字容器水平置中 */
+   width: 100%; /* 確保 h2 占據父容器的寬度 */
 }
+
+/* 隱藏左右圖片在小螢幕上 */
+@media (max-width: 767.98px) {
+   .disappear {
+       display: none ;
+   }
+}
+@media (max-width: 575.98px) {
+   .disappear2 {
+       display: none ;
+   }
+}
+
+.smaller {
+   font-size: 25px;
+   color: #685D5D;
+   letter-spacing: 0.15em;
+   font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+   .smaller {
+      font-size: 20px;
+   }
+}
+ 
+
+
+
 
 .Image1-1{
     width: 100%;
-    height:65%;
-    padding-right: 20px;
+    height:100%;
+    /*padding-right: 20px;*/
 
 }
 
 .Image1-2{
     width: 80%;
     height:70%;
-    padding-left: 200px;
+    /*padding-left: 200px;*/
     padding-top: 40px;
 }
 
@@ -80,31 +108,37 @@ color: #685D5D;
 }
 
 .Image4-1{
-   width:70%;
-   height:75%;
-   padding-right: 40px;
-   padding-bottom: 100px;
-   padding-left: 50px;
-}
+   width:300px;
+   height:300px;
+}   
 
 .Image4-2{
-   width: 50%;
-   height:50%;
-   padding-right: 50px;
+   width:300px;
+   height:300px;
 }
 
 .Image4-3{
-   width: 70%;
-   height:75%;
-   padding-bottom: 100px;
-   padding-right: 50px;
+   width:300px;
+   height:300px;
 }
 
 .Image4-4{
-   width: 50%;
-   height:50%;
-   padding-right: 50px;
+   width:300px;
+   height:300px;
 }
+
+@media (min-width: 575.98px) {
+   .move-up {
+      margin-top: -40px; /* 根據需要調整這個值來往上移動 */
+   }
+   .move-down {
+      margin-top: 40px; /* 根據需要調整這個值來往下移動 */
+   }
+}
+
+
+
+
 
 .Image3-1{
    width: 45%;
@@ -115,7 +149,7 @@ color: #685D5D;
    font-family: 'Zen Kaku Gothic Antique';
    letter-spacing: 0.2em;
    font-weight: 700;
-   width: 500px;
+   width: 576px;
    height: 80px;
    background-color: #409FAC;
    display: flex;
@@ -127,27 +161,34 @@ color: #685D5D;
    text-align: center;
    border-radius: 30px;
 }
+@media (max-width: 767.98px) {
+   .box2-1 {
+     font-size: 20px;
+     width: 100%;
+   }
+ }
 
 .box2-2 {
    font-family: 'Zen Kaku Gothic Antique';
    font-weight: 700;
-   width: 1200px;
-   height: 500px;
+   width: 100%;
    background-color: #F8F7F3;
-   display: flex;
-   justify-content: center;
-   align-items: center;
    color: white;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   text-align: center;
    border-radius: 30px;
-   padding-top: 20px;
+   padding: 20px; /* 使用 padding 控制內邊距，而不是 padding-top */
+   display: flex;
+   flex-direction: column; /* 保持多行文字換行 */
+   justify-content: center; /* 讓內容垂直居中 */
+   text-align: center; /* 讓文字在水平方向居中 */
+   box-sizing: border-box; /* 確保 padding 被包含在寬度內 */
 }
+
 
 .box2-3 {
    font-family: 'Zen Kaku Gothic Antique';
    font-weight: 700;
-   width: 1200px;
+   width: 100%;
    height: 100px;
    background-color: #409FAC;
    display: flex;
@@ -157,6 +198,8 @@ color: #685D5D;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    text-align: center;
    padding-top: 50px;
+   padding-left: 20px;
+   padding-right: 20px;
    position: relative;
    bottom: 40px;
 }
@@ -164,8 +207,7 @@ color: #685D5D;
 .box3-2 {
    font-family: 'Zen Kaku Gothic Antique';
    font-weight: 700;
-   width: 1200px;
-   height: 500px;
+   width: 100%;
    background-color: #F8F7F3;
    display: flex;
    justify-content: center;
@@ -175,13 +217,14 @@ color: #685D5D;
    text-align: center;
    border-radius: 30px;
    padding-top: 20px;
+   margin: 0 auto; /* 確保容器本身在父容器中居中 */
+   box-sizing: border-box; /* 確保 padding 不影響容器寬度 */
 }
 
 .box4-2 {
    font-family: 'Zen Kaku Gothic Antique';
    font-weight: 700;
-   width: 1200px;
-   height: 500px;
+   width: 100%;
    background-color: #F8F7F3;
    display: flex;
    justify-content: center;
@@ -191,62 +234,82 @@ color: #685D5D;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    text-align: center;
    border-radius: 30px;
-   padding-top: 20px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   margin: 0 auto; /* 確保容器本身在父容器中居中 */
+   box-sizing: border-box; /* 確保 padding 不影響容器寬度 */
 }
 
 
-.p2-1{
+
+.p2-1 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   letter-spacing: 0.2em;
+   margin: 10px 0;
+   color: #EC989F;
+   display: block;
+   text-align: left;
+ }
+ 
+ .p2-2 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   letter-spacing: 0.2em;
+   margin: 10px 0;
+   color: #E3A127;
+   display: block;
+   text-align: right;
+ }
+ 
+ .p2-3 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   letter-spacing: 0.2em;
+   margin: 10px 0;
+   color: #466986;
+   display: block;
+   text-align: left;
+   position: relative;
+ }
+ 
+ .p2-4 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 25px;
+   letter-spacing: 0.2em;
+   margin: 10px 0;
+   color: #FFFFFF;
+   display: block;
+   text-align: left;
+   position: relative;
+   bottom: 25px;
+ }
+ 
+ /* 當螢幕寬度小於 992px 時應用以下樣式 */
+ @media (max-width: 991.98px) {
+   .p2-1, .p2-2, .p2-3, .p2-4 {
+     font-size: 18px;
+   }
+ }
+
+.p3-0{
 font-family: 'Zen Kaku Gothic Antique';
 font-style: normal;
-font-weight: 700;
+font-weight: 900;
 font-size: 25px;
 letter-spacing: 0.2em;
 margin: 10px 0;
-color: #EC989F;
+color: #0D5269;
 display: block;
-text-align: left;
 }
-
-.p2-2{
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-letter-spacing: 0.2em;
-margin: 10px 0;
-color: #E3A127;
-display: block;
-text-align: right;
-position: relative;
-}
-
-
-.p2-3{
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-letter-spacing: 0.2em;
-margin: 10px 0;
-color: #466986;
-display: block;
-text-align: left;
-}
-
-.p2-4{
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-letter-spacing: 0.2em;
-margin: 10px 0;
-color: #FFFFFF;
-display: block;
-text-align: left;
-position: relative;
-bottom: 25px;
-}
-
 
 .p3-1{
 font-family: 'Zen Kaku Gothic Antique';
@@ -257,6 +320,7 @@ letter-spacing: 0.2em;
 margin: 10px 0;
 color: #0D5269;
 display: block;
+text-align: left;
 }
 
 .p3-2{
@@ -269,22 +333,33 @@ margin: 10px 0;
 color: #808080;
 display: block;
 justify-content: center;
+text-align: left;
 padding-top: 10px;
 }
 
-.p-5{
-font-family: 'Zen Kaku Gothic Antique';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 29px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.2em;
+ @media (max-width: 991.98px) {
+   .p3-2, .p3-0{
+     font-size: 18px;
+   }
+ }
 
-color: #409FAC;
+.p-5 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 29px;
+   letter-spacing: 0.2em;
+   color: #409FAC;
+   text-align: center; /* 這裡確保多行文字居中對齊 */
 }
+
+.col-4 {
+   display: flex;
+   justify-content: center; /* 水平置中 */
+   align-items: center; /* 垂直置中 */
+}
+
 
 .center-section1 {
    display: flex;
