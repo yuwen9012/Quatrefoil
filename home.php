@@ -13,10 +13,10 @@
 
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+   
     <!-- CSS -->
     <link rel="stylesheet" href="css/home.css">
-    <link rel='stylesheet' type='text/css' href='./css/Navbar.css'>
+    <link rel='stylesheet' type='text/css' href='css/Navbar.css'>
 
     <title>home</title>
 </head>
@@ -35,177 +35,191 @@
     </div>
   </nav>
 
-     <!-- 第一區塊 -->
-     <div class="container-fluid block1">
-        <br>
-        <div class="row">
-            <div class="col-md-5 left-section">
-            </div>
-            <div class="col-md-4 center-section">
-                <br>
-                <h3>四季更褶</h3>
-            </div>
-            <div class="col-md-3 right-section">
 
+             
+  <br>                
+  <br>                
+
+
+<!-- 第一區塊 -->
+<div style="text-align: center;">
+    <p style="font-size: 50px; color: #409FAC; letter-spacing: 0.2em; font-weight: 700;">
+        &nbsp;四季更褶
+    </p>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- 左側圖片 -->
+        <div class="col-md-2">
+            <img src="images/home1.png" class="disappear float-start img-fluid" width="170" height="170">
+        </div>
+        <!-- 文字與主圖片 -->
+        <div class="col-md-8">
+            <div>
+            <br>               
+                <p class="smaller text-center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;伴你探索色彩，定義專屬風格。
+                </p>
+            <br>
+            </div>
+            <div>
+                <img src="images/home3.png" class="mx-auto d-block" style="width:82%;">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-2 left-section">
-                <img class="Image1-1" src="images/home1.png" alt="Description of the image" class="img-fluid">
-            </div>
-
-            <div class="col-md-8 center-section">
-                <br>
-                <h2>伴你探索色彩，定義專屬風格。</h2>
-                <img class="Image1-2" src="images/home3.png" alt="Description of the image" class="img-fluid">
-            </div>
-
-
-            <div class="col-md-2 right-section">
-                <img class="Image1-1" src="images/home2.png" alt="Description of the image" class="img-fluid">
-            </div>
+        <!-- 右側圖片 -->
+        <div class="col-md-2">
+            <img src="images/home2.png" class="disappear float-end img-fluid" width="150" height="150">
         </div>
-        <br><br><br>
     </div>
+</div>
+
+
 
       <!-- 第二區塊 -->
      <div class="container-fluid block2">
         <br>
         <div class="row">
-            <div class="col-md-1 left-section">
+            <div class="col-sm-1">
             </div>
-
-            <div class="col-md-10 center-section">
+            <div class="col-sm-10">
                 <div class="box2-1">四季更褶-成為你/妳的神燈精靈</div>
-            </div>
-
-
-            <div class="col-md-1 right-section">
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-md-1 left-section">
-            </div>
 
-            <div class="col-md-10 center-section">
+        <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-10">
                 <div class="box2-2">
                     <div class="row">
-                        <div class="col-md-1 left-section">
-                        <img class="Image2-1" src="images/home4.png" alt="Description of the image" class="img-fluid">
+                        <div class="col-sm-2">
+                            <img class="disappear2 float-end img-fluid" src="images/home4.png"  width="120" height="125">
                         </div>
-                        <div class="col-md-10 right-section">
-                         <p class="p2-1">你/妳有沒有經歷過買衣服時的挫敗感，買的衣服在模特兒身上看起來很漂</p>
-                         <p class="p2-1">亮，但不知何故穿在你/妳身上卻很平淡？</p>
-                         <p class="p2-2">或者更糟的是，發現你最喜歡的顏色雖然迷人</p>
-                         <p class="p2-2">卻讓你看起來憔悴甚至疲憊？</p>
+                        <div class="col-sm-8">
+                         <p class="p2-1">你/妳有沒有經歷過買衣服時的挫敗感，買的衣服在模特兒身上看起來很漂亮，但不知何故穿在你/妳身上卻很平淡？</p>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-sm-4">
+                        </div>
+                        <div class="col-sm-6">
+                         <p class="p2-2">或者更糟的是，發現你最喜歡的顏色雖然迷人，卻讓你看起來憔悴甚至疲憊？</p>
+                        </div>
+                        <div class="col-sm-2">
+                            <img class="disappear2 float-start img-fluid" src="images/home5.png"  width="120" height="125">
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-10">
                          <p class="p2-3">品牌創始人也曾面臨過這樣的困境。和許多人一樣，會被特定的顏色或model的視覺效果所吸引，經常購買特定色系的衣服。然而，結果常常令人失望...</p>
-                         <p class="p2-3">但在一次偶然的邂逅裡，他的好奇心被激發，開始探索四季色彩的奧秘。</p>
+                         <p class="p2-3">但在一次偶然的邂逅裡，他的好奇心被激發，開始探索四季色彩的奧秘。</p><br><br>
                         </div>
-                        <div class="col-md-1 left-section">
-                            <img class="Image2-2" src="images/home5.png" alt="Description of the image" class="img-fluid">
+                        <div class="col-sm-1">
                         </div>
-                    </div>         
+                    </div>        
                 </div>
                 <div class="box2-3">
-                    <p class="p2-4">品牌願景：打造使每個人能夠擁抱自己獨特、消除與服裝選擇挫敗感的空間！</p>
+                    <div class="row">
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-10">
+                            <p class="p2-4">品牌願景：打造使每個人能夠擁抱自己獨特、消除與服裝選擇挫敗感的空間！</p>
+                        </div>
+                        <div class="col-sm-1">
+                        </div>
+                    </div>
                 </div>
-
-
-
             </div>
-            <div class="col-md-1 right-section">
+            <div class="col-sm-1">
             </div>
            </div>
         </div>
       </div>
-    <!-- 第三區塊 -->
-     <div class="container-fluid block3">
-        <div class="row">
-            <div class="col-md-1 left-section">
-            </div>
 
-            <div class="col-md-10 center-section">
+
+
+    <!-- 第三區塊 -->
+    <div class="container-fluid block3">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <div class="box2-1">穿搭四主論</div>
             </div>
-
-
-            <div class="col-md-1 right-section">
-            </div>
+            <div class="col-1"></div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-1 left-section">
-            </div>
-
-            <div class="col-md-10 center-section">
-                <div class="box3-2">
-                    <div class="col-md-5 left-section">
-                        <p class="p3-1">影響穿搭4要素</p>
-                    <img class="Image3-1" src="images/home6.png" alt="Description of the image" class="img-fluid">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="box3-2 row">
+                    <div class="col-12 col-md-5">
+                        <p class="p3-0">影響穿搭4要素</p>
+                        <img class="img-fluid" src="images/home6.png"><br><br>
                     </div>
-                    <div class="col-md-7 left-section">
-                        <p class="p3-1">產品主理論-四季色彩理論</p>
-                        <p class="p3-2">「春、夏、秋、冬」四季屬性是根據<br>美國的卡洛爾●傑克遜女士的四季色彩理論，<br>
-                            經過許多色彩學家的努力延伸，<br>發展出各地區不同基底膚色色調的相關學問。</p>
+                    <div class="col-12 col-md-7">
+                        <p class="p3-0">產品主理論-四季色彩理論</p>
+                        <p class="p3-2">「春、夏、秋、冬」四季屬性是根據美國的卡洛爾●傑克遜女士的四季色彩理論，經過許多色彩學家的努力延伸，發展出各地區不同基底膚色色調的相關學問。</p>
                     </div>
-                 </div>
-            <div class="col-md-1 right-section">
+                </div>    
             </div>
-           </div>
-        </div>
+            <div class="col-1"></div>
+        </div><br><br>
     </div>
 
     <!-- 第四區塊 -->
-     <div class="container-fluid block4">
+    <div class="container-fluid block4">
         <div class="row">
-            <div class="col-md-1 left-section">
-            </div>
-
-            <div class="col-md-10 center-section">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <div class="box2-1">基礎四季色環</div>
             </div>
-
-
-            <div class="col-md-1 right-section">
-            </div>
+            <div class="col-1"></div>
         </div>
         <br>
         <div class="row">
-            <div class="col-md-1 left-section">
-            </div>
-
-            <div class="col-md-10 center-section">
-                <div class="box4-2">
-                    <img class="Image4-1" src="images/home8.png" alt="Description of the image" class="img-fluid">
-                    <img class="Image4-2" src="images/home9.png" alt="Description of the image" class="img-fluid">
-                    <img class="Image4-3" src="images/home10.png" alt="Description of the image" class="img-fluid">
-                    <img class="Image4-4" src="images/home11.png" alt="Description of the image" class="img-fluid">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="box4-2 row">
+                    <div class="col-12 col-sm-3 move-up">
+                        <img class="img-fluid mx-auto d-block" src="images/home8.png">
+                    </div>
+                    <div class="col-12 col-sm-3 move-down">
+                        <img class="img-fluid mx-auto d-block" src="images/home9.png">
+                    </div>
+                    <div class="col-12 col-sm-3 move-up">
+                        <img class="img-fluid mx-auto d-block" src="images/home10.png">
+                    </div>
+                    <div class="col-12 col-sm-3 move-down">
+                        <img class="img-fluid mx-auto d-block" src="images/home11.png">
+                    </div>
                 </div>
-
             </div>
-
-
-            <div class="col-md-1 right-section">
-            </div>
-        </div>
+            <div class="col-1"></div>
+        </div><br><br>
     </div>
 
     <!-- 第五區塊 -->
-     <div class="container-fluid block5">
+    <div class="container-fluid block5">
         <div class="row">
-            <div class="col-md-5 left-section">
+            <div class="col-4">
             </div>
 
-            <div class="col-md-3 center-section">
+            <div class="col-4">
                 <p class="p-5">四季更褶<br>Quatrefoil</p>
             </div>
 
 
-            <div class="col-md-4 right-section">
+            <div class="col-4">
             </div>
         </div>
     </div>
+
+
+
 
 <body>
 </html>
