@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel='stylesheet' type='text/css' href='css/navbar.css'>
 
 <script>
@@ -11,9 +6,6 @@
         navCenter.classList.toggle('active');
     }
 </script>
-
-
-</head>
 
 <nav>
     <div class='nav_brand'>
@@ -33,5 +25,3 @@
     </div>
 </div>
   </nav>
-
-</html>
