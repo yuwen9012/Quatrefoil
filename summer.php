@@ -22,129 +22,287 @@
     <title>summer</title>
 </head>
 <body>
-     <nav>
-    <div class='brand'>
-      <a href="#"><img src="./images/icon/brand.png" width="120px" height="27px"/></a>
-    </div>
-    <div class='menu_center'>
-      <a href="test_new.php">四季色彩測驗</a>
-      <a href="#">四季商城</a>
-    </div>
-    <div class='menu_right'>
-      <a href="#"><img src="./images/icon/shirt-black.png" width="20px" height="20px"/></a>
-      <a href="#"><img src="./images/icon/user.png" width="20px" height="20px"/></a>
-    </div>
-  </nav>
+    <?php include "navbar.php"; ?> 
 
-     <!-- 第一區塊 -->
-     <div class="container-fluid block1" style="background-color: #b5e2d4;">
+
+     <!-- NEW 第一區塊 -->
+
+    <div class="container-fluid" style="background-color: #b5e2d4; height: flex; width:100%"><br><br><br>
         <div class="row">
-            <div class="col-1 left-section">
-            </div>
-            <div class="col-10 center-section">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <div class="box1">
-                    <div class="row">
-                        <div class="col-12-section">
-                            <p class="t1">您的四季色彩類型：<span>夏季型</span></p>
+                    <br><br>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="row">
+                            <p class="t1" style="margin: 40px 0px;">您的四季色彩類型：<span>夏季型</span></p>
                             <p class="t2">#溫和 #清爽 #書卷氣 #俐落</p>
                             <p class="t3">仙氣飄飄🪷、🧊🧊🧊、溫文儒雅、氣質出眾、（容易臉紅）、清新俊逸、低調時尚、(莫蘭迪色我本命）、四季型最溫柔、文青感</p>
-                            <div class="row">
-                                <div class="col-2 left-section">
-                                   <div class="box2">膚色</div>
-                                   <div class="box2">臉頰</div>
-                                   <div class="box2">眼睛</div>
-                                   <div class="box2">嘴唇</div>
-                                </div>
-                                <div class="col-2 left-section">
-                                   <div class="box3" style="font-size: 12px;">皮膚基調偏冷色調，<br>常為瓷器班的乳白色、淺冷調、<br>橄欖色或小麥色</div>
-                                   <div class="box3">霧面的粉紅色</div>
-                                   <div class="box3">柔和的焦茶色、深棕色，<br>眼白帶灰藍色</div>
-                                   <div class="box3">柔和帶冷的玫瑰粉色</div>
-                                </div>
-                                <div class="col-2 right-section">
-                                   <div class="box4">代表明星</div>
-                                   <div class="box5">飾品</div>
-                                </div>
-                                <div class="col-2 right-section">
-                                   <div class="box6">綾瀨遙、蒼井優、<br>李小璐、金雪炫、<br>福山雅治、小栗旬、<br>向井理、二宮和也</div>
-                                   <div class="box7">啞光銀、鑽石、<br>水晶、寶石、<br>乳白珍珠、玻璃質</div>
-                                </div>
-                                <div class="col-4 right-section">
-                                    <img class="Image" src="images/summer.png" alt="Description of the image" class="img-fluid">
-                                </div>
-                            </div> 
                         </div>
+                        <div class="row g-1">
+
+                            <div class="col-12 col-lg-7 col-xl-5">
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">膚色</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">皮膚基調偏冷，常為瓷器般的乳白色、橄欖色或小麥色</div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">臉頰</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">霧面的粉紅色</div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">眼睛</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">柔和的焦茶色、深棕色，<br>眼白帶灰藍色</div>
+                                    </div>
+                                </div> 
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">嘴唇</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">柔和帶冷的玫瑰粉色</div>
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="col-12 col-lg-5 col-xl-4">
+                                <div class="row g-1">
+                                    <div class="col-sm-5">
+                                        <div class="box4">代表明星</div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="box6" style="font-size: 15px;">綾瀨遙、蒼井優、<br>李小璐、金雪炫、<br>福山雅治、小栗旬、<br>向井理、二宮和也</div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-sm-5">
+                                        <div class="box5">飾品</div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="box7" style="font-size: 15px;">啞光銀、鑽石、<br>水晶、寶石、<br>乳白珍珠、玻璃質</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-3">
+                                <img src="images/summer.png"  class="float-end img-fluid">
+                            </div>
+                        </div>
+                    <div class="col-1"></div>   
+                    <div class="row">
+                </div><br><br>
+            </div>
+            <div class="col-1"></div>
+        </div><br><br><br>
+    </div>
+
+    
+    <!-- 商品區塊 -->
+    <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
+        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
+             <div class="row d-flex justify-content-center" id="myGoods" style="width:80%; height: 70%; margin: 0 auto;">        
+             </div>
+        <br><br>
+    </div>
+
+
+
+
+
+
+<!-- 實驗區塊 -->
+
+<div class="container-fluid" style="background-color: #fdfdfd; height: flex; margin-top: 40px;">
+    <form id="orderForm" action="php/submit.php" method="POST" style="margin-top: 40px;">
+    
+    <!-- 綠 -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center" style="font-size: 26px;font-weight: 700; color: #409FAC;">哪種搭配看起來最協調？（輸入排序1-4）</h2>
+                <br>
+            </div>
+        </div>
+        <div class="row g-0">            
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="winter" min="1" max="4" data-id="4">
+                    <div style=" width: 150px; height: 150px; background-color: #10A251; display: flex; position: relative;">
+                        <p class="color-text1">#10A251</p>
                     </div>
                 </div>
             </div>
-            <div class="col-1 right-section">
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="summer" min="1" max="4" data-id="2">
+                    <div style=" width: 150px; height: 150px; background-color: #029666; display: flex; position: relative;">
+                        <p class="color-text1">#029666</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="autumn" min="1" max="4" data-id="3">
+                    <div style=" width: 150px; height: 150px; background-color: #4C7028; display: flex; position: relative;">
+                        <p class="color-text1">#4C7028</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="spring" min="1" max="4" data-id="1">
+                    <div style=" width: 150px; height: 150px; background-color: #77C55F; display: flex; position: relative;">
+                        <p class="color-text1">#77C55F</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- 第二區塊 -->
-    <div class="container-fluid my-3 px-3">
-        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px;">根據測驗結果，為您推薦以下服裝單品：</p>
-             <div class="row d-flex justify-content-center" id="myGoods" style="width:80%; height: 70%; margin: 0 auto;">        
-             </div>
-    </div>
-
-<!-- 第三區塊 -->
-
-<div class="container">
-    <form id="orderForm" action="php/submit.php" method="POST">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center" style="font-size: 26px;font-weight: 700; color: #409FAC;">請問你最喜歡的衣服色彩？（輸入排序1-4）</h2>
-            <br>
-        </div>
-    </div>
-    <div class="row g-0">
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="spring" min="1" max="4" data-id="1">
-                <img src="images/sorting1.png" alt="Image 1">
+    <!-- 綠 -->
+    <br><br><hr><br><br>  
+    <!-- 紅 -->
+        <div class="row g-0">            
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="winter" min="1" max="4" data-id="4">
+                    <div style=" width: 150px; height: 150px; background-color: #941227; display: flex; position: relative;">
+                        <p class="color-text1">#941227</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="summer" min="1" max="4" data-id="2">
+                    <div style=" width: 150px; height: 150px; background-color: #983F52; display: flex; position: relative;">
+                        <p class="color-text1">#983F52</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="autumn" min="1" max="4" data-id="3">
+                    <div style=" width: 150px; height: 150px; background-color: #B92015; display: flex; position: relative;">
+                        <p class="color-text1">#B92015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="spring" min="1" max="4" data-id="1">
+                    <div style=" width: 150px; height: 150px; background-color: #E4513D; display: flex; position: relative;">
+                        <p class="color-text1">#E4513D</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="summer" min="1" max="4" data-id="2">
-                <img src="images/sorting2.png" alt="Image 2">
+    <!-- 紅 -->    
+    <br><br><hr><br><br>
+    <!-- 藍 -->
+        <div class="row g-0">            
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="winter" min="1" max="4" data-id="4">
+                    <div style=" width: 150px; height: 150px; background-color: #2D3EA1; display: flex; position: relative;">
+                        <p class="color-text1">#2D3EA1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="summer" min="1" max="4" data-id="2">
+                    <div style=" width: 150px; height: 150px; background-color: #7AAAD7; display: flex; position: relative;">
+                        <p class="color-text1">#7AAAD7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="autumn" min="1" max="4" data-id="3">
+                    <div style=" width: 150px; height: 150px; background-color: #357896; display: flex; position: relative;">
+                        <p class="color-text1">#357896</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="spring" min="1" max="4" data-id="1">
+                    <div style=" width: 150px; height: 150px; background-color: #63C5DB; display: flex; position: relative;">
+                        <p class="color-text1">#63C5DB</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="autumn" min="1" max="4" data-id="3">
-                <img src="images/sorting3.png" alt="Image 3">
+    <!-- 藍 -->    
+    <br><br><hr><br><br>
+    <!-- 黃 -->
+        <div class="row g-0">            
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="winter" min="1" max="4" data-id="4">
+                    <div style=" width: 150px; height: 150px; background-color: #FBF097; display: flex; position: relative;">
+                        <p class="color-text1">#FBF097</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="summer" min="1" max="4" data-id="2">
+                    <div style=" width: 150px; height: 150px; background-color: #E8E0A0; display: flex; position: relative;">
+                        <p class="color-text1">#E8E0A0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="autumn" min="1" max="4" data-id="3">
+                    <div style=" width: 150px; height: 150px; background-color: #DEA95C; display: flex; position: relative;">
+                        <p class="color-text1">#DEA95C</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="image-item">
+                    <input type="number" name="spring" min="1" max="4" data-id="1">
+                    <div style=" width: 150px; height: 150px; background-color: #FAE06D; display: flex; position: relative;">
+                        <p class="color-text1">#FAE06D</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="winter" min="1" max="4" data-id="4">
-                <img src="images/sorting4.png" alt="Image 4">
-            </div>
-        </div>
-    </div>
-</div>
-<button class="submit-btn" onclick="submitOrder()">提交</button>
+    <!-- 黃 -->    
+    <br><br>    
+        <button class="submit-btn" style="max-width: 300px;" onclick="submitOrder()">提交</button>
     </form>
-    
-    <!-- 第四區塊 -->
-     <div class="container-fluid block5">
+</div>
+
+    <!-- 第五區塊 
+    <div class="container-fluid block5">
         <div class="row">
-            <div class="col-md-5 left-section">
+            <div class="col-4">
             </div>
 
-            <div class="col-md-5 center-section">
-                <p class="p-4">四季更褶<br>Quatrefoil</p>
+            <div class="col-4">
+                <p class="p-5">四季更褶<br>Quatrefoil</p>
             </div>
 
 
-            <div class="col-md-2 right-section">
+            <div class="col-4">
             </div>
         </div>
     </div>
+-->
+    <?php include "bottom.php"; ?> 
 
+
+    
 <script>
     var goods = [
         {
@@ -198,7 +356,7 @@
     ];
 
     for (let i = 0; i < goods.length; i++) {
-         let html = '<div class="col-3 mt-2">' +
+         let html = '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-2">' +
                '<div class="card">' +
                '<div class="card-body">' +
                '<img class="card-img-top" src="' + goods[i].image + '" alt="' + goods[i].name + '圖片">' +
@@ -222,4 +380,7 @@
 </script>
 <body>
 </html>
+
+
+
 
