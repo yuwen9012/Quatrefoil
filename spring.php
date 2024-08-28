@@ -16,134 +16,106 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/spring.css">
+    <link rel="stylesheet" href="css/spring1.css">
     <link rel='stylesheet' type='text/css' href='./css/Navbar.css'>
 
     <title>spring</title>
 </head>
 <body>
-     <nav>
-    <div class='brand'>
-      <a href="#"><img src="./images/icon/brand.png" width="120px" height="27px"/></a>
-    </div>
-    <div class='menu_center'>
-      <a href="test_new.php">四季色彩測驗</a>
-      <a href="#">四季商城</a>
-    </div>
-    <div class='menu_right'>
-      <a href="#"><img src="./images/icon/shirt-black.png" width="20px" height="20px"/></a>
-      <a href="#"><img src="./images/icon/user.png" width="20px" height="20px"/></a>
-    </div>
-  </nav>
+    <?php include "navbar.php"; ?> 
 
-     <!-- 第一區塊 -->
-     <div class="container-fluid block1" style="background-color: #f8d2d6;">
+    <!-- NEW 第一區塊 -->
+    <div class="container-fluid" style="background-color: #f8d2d6; height: flex; width:100%"><br><br><br>
         <div class="row">
-            <div class="col-1 left-section">
-            </div>
-            <div class="col-10 center-section">
+            <div class="col-1"></div>
+            <div class="col-10">
                 <div class="box1">
-                    <div class="row">
-                        <div class="col-12-section">
-                            <p class="t1">您的四季色彩類型：<span>春季型</span></p>
+                    <br><br>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="row">
+                            <p class="t1" style="margin: 40px 0px;">您的四季色彩類型：<span>春季型</span></p>
                             <p class="t2">#開朗 #陽光 #朝氣感 #熱情</p>
                             <p class="t3">笑起來春天來臨😳、充滿活力、請支援防曬、眼神靈動、親切感100、（感覺皮很薄）、四季型色素最淺、（看起來很年輕）、🌸🍃🌼</p>
-                            <div class="row">
-                                <div class="col-2 left-section">
-                                   <div class="box2">膚色</div>
-                                   <div class="box2">臉頰</div>
-                                   <div class="box2">眼睛</div>
-                                   <div class="box2">嘴唇</div>
-                                </div>
-                                <div class="col-2 left-section">
-                                   <div class="box3">皮膚基調偏暖色調，<br>膚色明亮白皙具透明感</div>
-                                   <div class="box3">偏暖橘色調</div>
-                                   <div class="box3">明亮的茶色、棕色系</div>
-                                   <div class="box3">偏橘的粉色</div>
-                                </div>
-                                <div class="col-2 right-section">
-                                   <div class="box4">代表明星</div>
-                                   <div class="box5">飾品</div>
-                                </div>
-                                <div class="col-2 right-section">
-                                   <div class="box6">石原里美、橋本環奈、<br>徐若瑄、李智恩、<br>山下智久、岡田將生、<br>千葉雄大、坂口健太郎</div>
-                                   <div class="box7">亮面金色、香檳色、<br>玫瑰金</div>
-                                </div>
-                                <div class="col-4 right-section">
-                                    <img class="Image" src="images/spring.png" alt="Description of the image" class="img-fluid">
-                                </div>
-                            </div> 
                         </div>
-                    </div>
-                </div>
+                        <div class="row g-1">
+                            <div class="col-12 col-lg-7 col-xl-5">
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">膚色</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">皮膚基調偏暖色調，<br>膚色明亮白皙具透明感</div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">臉頰</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">偏暖橘色調</div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">眼睛</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">明亮的茶色、棕色系</div>
+                                    </div>
+                                </div> 
+                                <div class="row g-1">
+                                    <div class="col-sm-4">
+                                        <div class="box2">嘴唇</div>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="box3" style="font-size: 15px;">偏橘的粉色</div>
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="col-12 col-lg-5 col-xl-4">
+                                <div class="row g-1">
+                                    <div class="col-sm-5">
+                                        <div class="box4">代表明星</div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="box6" style="font-size: 15px;">石原里美、橋本環奈、<br>徐若瑄、李智恩、<br>山下智久、岡田將生、<br>千葉雄大、坂口健太郎</div>
+                                    </div>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-sm-5">
+                                        <div class="box5">飾品</div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="box7" style="font-size: 15px;">亮面金色、香檳色、<br>玫瑰金</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-3">
+                                <img src="images/spring.png"  class="float-end img-fluid">
+                            </div>
+                        </div>
+                    <div class="col-1"></div>   
+                    <div class="row">
+                </div><br><br>
             </div>
-            <div class="col-1 right-section">
-            </div>
-        </div>
+            <div class="col-1"></div>
+        </div><br><br><br>
     </div>
 
-    <!-- 第二區塊 -->
-    <div class="container-fluid my-3 px-3">
-        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px;">根據測驗結果，為您推薦以下服裝單品：</p>
-             <div class="row d-flex justify-content-center" id="myGoods" style="width:75%; height: 70%; margin: 0 auto;">        
+    <!-- 商品區塊 -->
+    <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
+        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
+             <div class="row d-flex justify-content-center" id="myGoods" style="width:80%; height: 70%; margin: 0 auto;">        
              </div>
+        <br><br>
     </div>
 
-<!-- 第三區塊 -->
+    <!-- 實驗區塊 -->
+    <?php include "experiment.php"; ?> 
+    <!-- 底部區塊 -->
+    <?php include "footer.php"; ?> 
 
-<div class="container">
-    <form id="orderForm" action="php/submit.php" method="POST">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center" style="font-size: 26px;font-weight: 700; color: #409FAC;">請問你最喜歡的衣服色彩？（輸入排序1-4）</h2>
-            <br>
-        </div>
-    </div>
-    <div class="row g-0">
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="spring" min="1" max="4" data-id="1">
-                <img src="images/sorting1.png" alt="Image 1">
-            </div>
-        </div>
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="summer" min="1" max="4" data-id="2">
-                <img src="images/sorting2.png" alt="Image 2">
-            </div>
-        </div>
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="autumn" min="1" max="4" data-id="3">
-                <img src="images/sorting3.png" alt="Image 3">
-            </div>
-        </div>
-        <div class="col-3 col-md-3">
-            <div class="image-item text-center">
-                <input type="number" name="winter" min="1" max="4" data-id="4">
-                <img src="images/sorting4.png" alt="Image 4">
-            </div>
-        </div>
-    </div>
-</div>
-<button class="submit-btn" onclick="submitOrder()">提交</button>
-    </form>
-    
-    <!-- 第四區塊 -->
-     <div class="container-fluid block5">
-        <div class="row">
-            <div class="col-md-5 left-section">
-            </div>
-
-            <div class="col-md-5 center-section">
-                <p class="p-4">四季更褶<br>Quatrefoil</p>
-            </div>
-
-
-            <div class="col-md-2 right-section">
-            </div>
-        </div>
-    </div>
 <script>
     var goods = [
         {
@@ -197,7 +169,7 @@
     ];
 
     for (let i = 0; i < goods.length; i++) {
-         let html = '<div class="col-3 mt-2">' +
+         let html = '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-2">' +
                '<div class="card">' +
                '<div class="card-body">' +
                '<img class="card-img-top" src="' + goods[i].image + '" alt="' + goods[i].name + '圖片">' +
@@ -221,5 +193,3 @@
 </script>
 </body>
 </html>
-
-
