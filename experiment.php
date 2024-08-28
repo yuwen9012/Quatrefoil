@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/experiment.css">
 
 <!-- 實驗區塊 -->
-<div class="container-fluid" style="background-color: #fdfdfd; margin-top: 40px;">
+<div class="container-fluid" style="background-color: #ffffff; margin-top: 40px;">
     <form id="orderForm" action="php/submit.php" method="POST" style="margin: 0 auto; max-width: 800px; margin-top: 40px;">
     
     <!-- 綠 -->
@@ -157,8 +157,8 @@
             <div class="face-container">
                 <img src="images/user_face.jpg" alt="User Face" class="user-face">
             </div>
-            <div style="width: 170px; height: 170px; background-color: #564237; display: flex; position: relative;">
-                <p class="color-text1">#564237</p>
+            <div style="width: 170px; height: 170px; background-color: #80302f; display: flex; position: relative;">
+                <p class="color-text1">#80302F</p>
             </div>
             <input type="number" name="autumn" min="1" max="4" style="margin-top: 16px;">
         </div>
