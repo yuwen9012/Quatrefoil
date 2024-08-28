@@ -1,0 +1,22 @@
+.block5{
+    height: flex;
+ }
+
+.col-4 {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+ }
+
+
+
+.p-5 {
+   font-family: 'Zen Kaku Gothic Antique';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 29px;
+   letter-spacing: 0.2em;
+   color: #409FAC;
+   text-align: center; /* 這裡確保多行文字居中對齊 */
+} 
