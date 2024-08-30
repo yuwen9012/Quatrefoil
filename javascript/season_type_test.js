@@ -1,7 +1,3 @@
-function waiting_aniamte(){
-	a=1;
-}
-
 function face_detect(gender, lenses, hair_dying){
 	var formData = new FormData();
 
@@ -49,13 +45,11 @@ function face_detect(gender, lenses, hair_dying){
 	});
 }
 
-// $(document).ajaxStart(function() {
-//   // 顯示等待動畫
-//   // $('#loading-animation').show();
-// }).ajaxStop(function() {
-//   // 隱藏等待動畫
-//   // $('#loading-animation').hide();
-// });
+$(document).ajaxStart(function() {
+    $('#loading_animation').show();
+}).ajaxStop(function() {
+    $('#loading_animation').hide();
+});
 
 
 $(document).ready(function(){
