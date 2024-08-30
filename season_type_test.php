@@ -24,6 +24,10 @@
     <title>四季色彩測驗</title>
 </head>
 <body>
+
+  <div id='loading_animation'>
+      <img src="images/icon/loading.gif" alt="正在分析四季色中...">
+  </div>
   <?php 
     include('navbar.php');
   ?>
