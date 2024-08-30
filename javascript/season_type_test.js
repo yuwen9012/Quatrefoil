@@ -9,23 +9,22 @@ function face_detect(gender, lenses, hair_dying){
 	formData.append('lenses', lenses);
 	formData.append('gender', gender);
 
-  var photo = $('#photo')[0].files[0];
-  formData.append('photo', photo);
+    var photo = $('#photo')[0].files[0];
+    formData.append('photo', photo);
 
 	$.ajax({
 		url: "../php/ajax_detect_image.php",
 		type: "POST",
 		data: formData,
 		contentType: false,
-    processData: false,
+        processData: false,
 		success: function(response) {
 			try{
 				if (typeof response === "string") {
                 	response = JSON.parse(response);
             	}
-
 			} catch (e){
-				console.log(e);
+				alert('發生錯誤，請稍後再試(Error xxx)')
 			}
 
 			if (response.state){
@@ -40,14 +39,12 @@ function face_detect(gender, lenses, hair_dying){
 				}else{
 					alert(response.msg);
 				}
-
 			} else{
 				alert(response.msg);
 			}
 		},
 		error: function(jqXHR) {
-			console.log(jqXHR.readyState+": "+ jqXHR.status);
-            alert("發生錯誤，請稍後再試");
+            alert("發生錯誤，請稍後再試(Error xxx)");
 		}
 	});
 }
@@ -94,9 +91,14 @@ $(document).ready(function(){
       		}
     	}
 
-    	if(gender!='' && lenses!='' && hair_dying!=''){
+    	if(gender==''){
+    		alert('請勾選性別');
+    	}else if (lenses==''){
+    		alert('請勾選是否配戴變色片');
+    	}else if (hair_dying==''){
+            alert('請勾選是否染髮');
+    	} else {
     		face_detect(gender, lenses, hair_dying);
     	}
-		
 	});
 });

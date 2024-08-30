@@ -17,7 +17,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/spring.css">
-    <link rel='stylesheet' type='text/css' href='./css/Navbar.css'>
 
     <title>spring</title>
 </head>

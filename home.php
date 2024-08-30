@@ -15,13 +15,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    
     <!-- CSS -->
-    <link rel="stylesheet" href="css/home.css">
-    <link rel='stylesheet' type='text/css' href='css/Navbar.css'>
+    <link rel="stylesheet" type='text/css' href="/css/home.css">
 
-    <title>home</title>
+    <title>四季更褶 | 首頁</title>
 </head>
 <body>
-     <?php include "navbar.php"; ?>            
+     <? include "navbar.php"?>            
   <br>                
   <br>                
 
@@ -202,9 +201,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 <body>
 </html>

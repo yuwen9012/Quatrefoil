@@ -1,7 +1,4 @@
-<link rel="stylesheet" href="css/home.css">
-    
-    
-    
+<link rel="stylesheet" href="css/footer.css">
     <!-- 底部區塊 -->
     <div class="container-fluid block5" style="background-color: #f9f9f9; height: flex;">
         <div class="row">

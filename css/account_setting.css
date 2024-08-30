@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 main{
-	max-width: 1280px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -10,8 +9,22 @@ main{
 	gap: 40px;
 }
 
-#revise_pwd{
+#form{
+	width: 100%;
 	display: none;
+}
+
+#button{
+	display: block;
+	margin:0px auto;
+}
+
+#form>div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin:0px auto 20px auto;
 }
 
 .option{
@@ -36,10 +49,11 @@ main{
 	margin: 15px auto;
 }
 
-#title{
-
+.title{
+	font-size: 32px;
+	font-weight: 800;
 }
 
 #email{
-	
+	color: #888888;
 }

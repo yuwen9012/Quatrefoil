@@ -28,30 +28,26 @@ body{
 }
 
 .primary{
-	@extend .btn;
 	color: #409fac;
 	border: 1.5px solid #409FAC;
 }
 
 .primary:hover{
-	@extend .btn:hover;
 	background-color: #409fac;
 }
 
 .danger{
-	@extend .btn;
 	color: #dc3545;
 	border: 1.5px solid #dc3545;
 }
 
 .danger:hover{
-	@extend .btn:hover;
 	background-color: #dc3545;
 }
 
 .input_primary{
 	display: block;
-	width: 100%;
+	width:100%;
 	max-width: 240px;
 	height: 30px;
 	border-bottom: 1.5px solid #000000; 

@@ -1,16 +1,54 @@
 @charset "UTF-8";
 
 main{
+	width: 100%;
 	display: flex;
-	margin-top: 30px;
-	justify-content:center;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-start;
+	justify-content: center;
+	padding: 60px 0px;
+	max-width: 1280px;
+}
+
+.btn_social_login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 30px;
+	gap: 0px;
+
+	width: 200px;
+	height: 36px;
+
+	background-color: #F5F5F5;
+	border-radius: 30px;
+	
+	font-size:12px;
 }
 
 .contain{
-	text-align: center;
-	background-color: #ffffff;
-	width: 450px;
-	height: 300px;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	width: 100%;
+	min-width: 300px;
+
+}
+
+.social_login{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: center;
+	padding: 20px 0px;
+	gap: 10px;
 }
 
 button{
@@ -32,19 +70,19 @@ button>img{
 	margin-right: 20px;
 }
 
-.social_login_fb{
-	background-color: #1877f2;
-	color: #ffffff;
+form{
+	width: 100%;
 }
 
 form> input{
 	display: block;
-	width: 300px;
+	width: 100%;
+	max-width: 240px;
 	height: 30px;
-	border-bottom: 1.5px solid #000000;  
-	border-top:0px;  
-	border-left:0px;  
-	border-right:0px;  
+	border-bottom: 1.5px solid #000000; 
+	border-top: none;
+	border-left: none;
+	border-right: none;
 	outline: none;
 	margin: 15px auto;
 	font-size: 14px;
@@ -54,27 +92,67 @@ form> input:focus{
 	border-bottom: 1.5px solid #409fac;
 }
 
-#login{
-	width: 80px;
-	height: 30px;
-	background-color: #ffffff;
-	border: 1.5px solid #409fac;
-	border-radius: 30px;
-	color: #409fac;
-	margin-top: 50px;
+form> div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
-#login:hover{
-	background-color: #409fac;
-	border: none;
-	color: #ffffff;
-	cursor: pointer;
+.seperate{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 0px 20px;
+	gap: 10px;
+	width:100%;
+	max-width: 420px;
+	color: #AAAAAA;
+}
+
+.line{
+	width: 100%;
+	height: 0;
+	border-bottom: 1.5px solid #AAAAAA;
+}
+
+h3{
+	margin: 0px;
+	font-size: 20px;
+	color: #292929;
 }
 
 .hint{
-	font-size:12px;
+	font-size:13px;
 }
 
-#go_to_register{
+.register{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0px;
+	gap: 10px;
+
+	width: 50%;
+	min-width: 300px;
+	font-size: 14px;
+	color: #292929;
+}
+
+.title{
+	font-size: 18px;
+}
+
+.link{
 	color:#409fac;
+}
+
+.btn_social_login:hover{
+	background-color: #EEEEEE;
+}
+
+.error_input{
+	border-bottom: 1.5px solid #FF0000; 
 }

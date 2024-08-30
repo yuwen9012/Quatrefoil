@@ -17,7 +17,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/winter.css">
-    <link rel='stylesheet' type='text/css' href='./css/Navbar.css'>
 
     <title>Winter</title>
 </head>
