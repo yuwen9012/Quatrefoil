@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="css/experiment.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="javascript/experiment.js"></script>
 
 <!-- 實驗區塊 -->
 <div id= 'contain-experiment' class="container-fluid" style="background-color: #ffffff; margin-top: 40px;">
@@ -177,19 +179,3 @@
     <button class="submit-btn" style="max-width: 300px;" onclick="submitOrder()">提交</button>
     </form>
 </div>
-
-<script>
-    // Function to shuffle elements within a parent
-    function shuffleElements(parent) {
-        let items = parent.children;
-        for (let i = items.length; i >= 0; i--) {
-            parent.appendChild(items[Math.random() * i | 0]);
-        }
-    }
-
-    // Shuffle sections
-    shuffleElements(document.getElementById('green-section'));
-    shuffleElements(document.getElementById('red-section'));
-    shuffleElements(document.getElementById('blue-section'));
-    shuffleElements(document.getElementById('yellow-section'));
-</script>
