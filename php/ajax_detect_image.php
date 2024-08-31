@@ -38,8 +38,10 @@ if(!$select_db) {
                 if ($sql_insert_state){
                 	$response['state']= True;
                 	$response['msg']= $message;
+                	
                     session_start();
-                    $_SESSION['season_test_img']= $image_name;
+                    $_SESSION['season']= $message;
+                    $_SESSION['experiment_img']= $image_name;
                 } else{
                 	$response['msg']= '發生錯誤，請稍後再試(Error xx2)';
                 }
@@ -56,7 +58,6 @@ if(!$select_db) {
     			$response['msg']= '發生錯誤，請稍後再試(Error xx4)';
     	    } else{
     		    $response['msg']= '發生錯誤，請稍後再試(Error xx5)';
-
     	    }
 
         } else {
