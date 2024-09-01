@@ -42,8 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // 如果有任何验证失败，阻止表单提交
-        if (!isValid) {
-            event.preventDefault(); // 防止表单提交
+        if (isValid) {
+            alert("表單已成功提交，感謝撥空填答！");
+            // 清空表单输入内容
+            
         }
     });
 });
