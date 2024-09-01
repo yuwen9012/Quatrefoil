@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-08-31 16:10:40
+-- 產生時間： 2024-09-02 03:12:12
 -- 伺服器版本： 10.4.21-MariaDB
 -- PHP 版本： 8.0.10
 
@@ -44,15 +44,18 @@ CREATE TABLE `test_sorting` (
   `winter_4` int(5) NOT NULL,
   `summer_4` int(5) NOT NULL,
   `autumn_4` int(5) NOT NULL,
-  `spring_4` int(5) NOT NULL
+  `spring_4` int(5) NOT NULL,
+  `season` varchar(10) NOT NULL,
+  `image_name` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- 傾印資料表的資料 `test_sorting`
 --
 
-INSERT INTO `test_sorting` (`id`, `winter_1`, `summer_1`, `autumn_1`, `spring_1`, `winter_2`, `summer_2`, `autumn_2`, `spring_2`, `winter_3`, `summer_3`, `autumn_3`, `spring_3`, `winter_4`, `summer_4`, `autumn_4`, `spring_4`) VALUES
-(1, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4);
+INSERT INTO `test_sorting` (`id`, `winter_1`, `summer_1`, `autumn_1`, `spring_1`, `winter_2`, `summer_2`, `autumn_2`, `spring_2`, `winter_3`, `summer_3`, `autumn_3`, `spring_3`, `winter_4`, `summer_4`, `autumn_4`, `spring_4`, `season`, `image_name`) VALUES
+(1, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, '', ''),
+(2, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, '', '');
 
 --
 -- 已傾印資料表的索引
@@ -72,7 +75,7 @@ ALTER TABLE `test_sorting`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `test_sorting`
 --
 ALTER TABLE `test_sorting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
