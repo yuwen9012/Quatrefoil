@@ -31,7 +31,7 @@ if (!$select_db) {
     $values_2 = [$winter_2, $summer_2, $autumn_2, $spring_2];
     $values_3 = [$winter_3, $summer_3, $autumn_3, $spring_3];
     $values_4 = [$winter_4, $summer_4, $autumn_4, $spring_4];
-    }
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 檢查是否有空值
@@ -54,25 +54,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
+    // 开始会话并获取 session 数据
+    session_start();
+    $season = isset($_SESSION['season']) ? $_SESSION['season'] : '';
+    $image_name = isset($_SESSION['experiment_img']) ? $_SESSION['experiment_img'] : '';
+
     // 插入数据到数据库表中
-    $sql = "INSERT INTO test_sorting (winter_1, summer_1, autumn_1, spring_1, winter_2, summer_2, autumn_2, spring_2, winter_3, summer_3, autumn_3, spring_3, winter_4, summer_4, autumn_4, spring_4) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO test_sorting (winter_1, summer_1, autumn_1, spring_1, winter_2, summer_2, autumn_2, spring_2, winter_3, summer_3, autumn_3, spring_3, winter_4, summer_4, autumn_4, spring_4, season, image_name) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     $stmt = $db_link->prepare($sql);
     
     // 绑定参数
-    $stmt->bind_param("iiiiiiiiiiiiiiii", $winter_1, $summer_1, $autumn_1, $spring_1, $winter_2, $summer_2, $autumn_2, $spring_2, $winter_3, $summer_3, $autumn_3, $spring_3, $winter_4, $summer_4, $autumn_4, $spring_4);
+    $stmt->bind_param("iiiiiiiiiiiiiiiiss", 
+        $winter_1, $summer_1, $autumn_1, $spring_1, 
+        $winter_2, $summer_2, $autumn_2, $spring_2, 
+        $winter_3, $summer_3, $autumn_3, $spring_3, 
+        $winter_4, $summer_4, $autumn_4, $spring_4, 
+        $season, $image_name);
 
     // 所有檢查都通過，執行插入操作
     if ($stmt->execute()) {
-        echo "<script>
-            window.history.back(); // 返回上一页
-            // 清空表单输入内容
-            var form = document.getElementById('orderForm');
-            if (form) {
-                form.reset(); // 清空表单输入内容
-            }
-        </script>";
+        echo "表單上傳成功";
         exit();
     } else {
         echo "插入数据时出错: " . $stmt->error;
     }
 }
+?>
