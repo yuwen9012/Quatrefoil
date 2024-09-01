@@ -26,6 +26,33 @@ if (!$select_db) {
     $autumn_4 = $_POST['autumn_4'];
     $spring_4 = $_POST['spring_4'];
 
+    // 將所有的值存儲在一個數組中
+    $values_1 = [$winter_1, $summer_1, $autumn_1, $spring_1];
+    $values_2 = [$winter_2, $summer_2, $autumn_2, $spring_2];
+    $values_3 = [$winter_3, $summer_3, $autumn_3, $spring_3];
+    $values_4 = [$winter_4, $summer_4, $autumn_4, $spring_4];
+    }
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // 檢查是否有空值
+    if (in_array("", $values_1) || in_array("", $values_2) || in_array("", $values_3) || in_array("", $values_4)) {
+        exit(); // 停止脚本，不执行插入操作
+    }
+
+    // 檢查是否有重複的值
+    if (count($values_1) !== count(array_unique($values_1)) || 
+        count($values_2) !== count(array_unique($values_2)) || 
+        count($values_3) !== count(array_unique($values_3)) || 
+        count($values_4) !== count(array_unique($values_4))) {
+        exit(); // 停止脚本，不执行插入操作
+    }
+
+    // 檢查是否所有值都在1到4之間
+    foreach (array_merge($values_1, $values_2, $values_3, $values_4) as $value) {
+        if ($value < 1 || $value > 4) {
+            exit(); // 停止脚本，不执行插入操作
+        }
+    }
 
     // 插入数据到数据库表中
     $sql = "INSERT INTO test_sorting (winter_1, summer_1, autumn_1, spring_1, winter_2, summer_2, autumn_2, spring_2, winter_3, summer_3, autumn_3, spring_3, winter_4, summer_4, autumn_4, spring_4) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -34,15 +61,18 @@ if (!$select_db) {
     // 绑定参数
     $stmt->bind_param("iiiiiiiiiiiiiiii", $winter_1, $summer_1, $autumn_1, $spring_1, $winter_2, $summer_2, $autumn_2, $spring_2, $winter_3, $summer_3, $autumn_3, $spring_3, $winter_4, $summer_4, $autumn_4, $spring_4);
 
-    // 执行查询
+    // 所有檢查都通過，執行插入操作
     if ($stmt->execute()) {
-         header("Location: experiment.php");
+        echo "<script>
+            window.history.back(); // 返回上一页
+            // 清空表单输入内容
+            var form = document.getElementById('orderForm');
+            if (form) {
+                form.reset(); // 清空表单输入内容
+            }
+        </script>";
+        exit();
     } else {
         echo "插入数据时出错: " . $stmt->error;
     }
-
-    // 关闭连接
-    $stmt->close();
-    $db_link->close();
 }
-?>
