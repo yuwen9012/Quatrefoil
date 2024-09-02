@@ -21,7 +21,7 @@
             <div style="width: 170px; height: 170px; background-color: #10A251; display: flex; position: relative;">
                 <p class="color-text1">#10A251</p>
             </div>
-            <input type="number" name="winter_1" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="winter" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="2">
             <div class="face-container">
@@ -30,7 +30,7 @@
             <div style="width: 170px; height: 170px; background-color: #029666; display: flex; position: relative;">
                 <p class="color-text1">#029666</p>
             </div>
-            <input type="number" name="summer_1" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="summer" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="3">
             <div class="face-container">
@@ -39,7 +39,7 @@
             <div style="width: 170px; height: 170px; background-color: #4C7028; display: flex; position: relative;">
                 <p class="color-text1">#4C7028</p>
             </div>
-            <input type="number" name="autumn_1" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="autumn" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="1">
             <div class="face-container">
@@ -48,7 +48,7 @@
             <div style="width: 170px; height: 170px; background-color: #77C55F; display: flex; position: relative;">
                 <p class="color-text1">#77C55F</p>
             </div>
-            <input type="number" name="spring_1" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="spring" min="1" max="4" style="margin-top: 16px;">
         </div>
     </div>
     <!-- 綠 -->
@@ -62,7 +62,7 @@
             <div style="width: 170px; height: 170px; background-color: #941227; display: flex; position: relative;">
                 <p class="color-text1">#941227</p>
             </div>
-            <input type="number" name="winter_2" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="winter" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="2">
             <div class="face-container">
@@ -71,7 +71,7 @@
             <div style="width: 170px; height: 170px; background-color: #983F52; display: flex; position: relative;">
                 <p class="color-text1">#983F52</p>
             </div>
-            <input type="number" name="summer_2" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="summer" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="3">
             <div class="face-container">
@@ -80,7 +80,7 @@
             <div style="width: 170px; height: 170px; background-color: #B92015; display: flex; position: relative;">
                 <p class="color-text1">#B92015</p>
             </div>
-            <input type="number" name="autumn_2" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="autumn" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="1">
             <div class="face-container">
@@ -89,7 +89,7 @@
             <div style="width: 170px; height: 170px; background-color: #E4513D; display: flex; position: relative;">
                 <p class="color-text1">#E4513D</p>
             </div>
-            <input type="number" name="spring_2" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="spring" min="1" max="4" style="margin-top: 16px;">
         </div>
     </div>
     <!-- 紅 -->    
@@ -103,7 +103,7 @@
             <div style="width: 170px; height: 170px; background-color: #2D3EA1; display: flex; position: relative;">
                 <p class="color-text1">#2D3EA1</p>
             </div>
-            <input type="number" name="winter_3" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="winter" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="2">
             <div class="face-container">
@@ -112,7 +112,7 @@
             <div style="width: 170px; height: 170px; background-color: #7AAAD7; display: flex; position: relative;">
                 <p class="color-text1">#7AAAD7</p>
             </div>
-            <input type="number" name="summer_3" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="summer" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="3">
             <div class="face-container">
@@ -121,7 +121,7 @@
             <div style="width: 170px; height: 170px; background-color: #357896; display: flex; position: relative;">
                 <p class="color-text1">#357896</p>
             </div>
-            <input type="number" name="autumn_3" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="autumn" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="1">
             <div class="face-container">
@@ -130,7 +130,7 @@
             <div style="width: 170px; height: 170px; background-color: #63C5DB; display: flex; position: relative;">
                 <p class="color-text1">#63C5DB</p>
             </div>
-            <input type="number" name="spring_3" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="spring" min="1" max="4" style="margin-top: 16px;">
         </div>
     </div>
     <!-- 藍 -->    
@@ -144,7 +144,7 @@
             <div style="width: 170px; height: 170px; background-color: #110C0B; display: flex; position: relative;">
                 <p class="color-text1">#110C0B</p>
             </div>
-            <input type="number" name="winter_4" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="winter" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="2">
             <div class="face-container">
@@ -153,7 +153,7 @@
             <div style="width: 170px; height: 170px; background-color: #6A6F89; display: flex; position: relative;">
                 <p class="color-text1">#6A6F89</p>
             </div>
-            <input type="number" name="summer_4" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="summer" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="3">
             <div class="face-container">
@@ -162,7 +162,7 @@
             <div style="width: 170px; height: 170px; background-color: #80302f; display: flex; position: relative;">
                 <p class="color-text1">#80302F</p>
             </div>
-            <input type="number" name="autumn_4" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="autumn" min="1" max="4" style="margin-top: 16px;">
         </div>
         <div class="col-6 col-md-3 image-item" data-id="1">
             <div class="face-container">
@@ -171,11 +171,11 @@
             <div style="width: 170px; height: 170px; background-color: #C49272; display: flex; position: relative;">
                 <p class="color-text1">#C49272</p>
             </div>
-            <input type="number" name="spring_4" min="1" max="4" style="margin-top: 16px;">
+            <input type="number" name="spring" min="1" max="4" style="margin-top: 16px;">
         </div>
     </div>
     <!-- 黃 -->    
     <br><br>    
-    <button class="submit-btn" style="max-width: 300px;" onclick="submitOrder()">提交</button>
+    <input type='submit' class="submit-btn" style="max-width: 300px;"/>
     </form>
 </div>
