@@ -1,57 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('orderForm').addEventListener('submit', function(event) {
-        const sections = ['green-section', 'red-section', 'blue-section', 'yellow-section'];
-        let isValid = true; // 追踪验证状态
-
-        // 遍历每个 section 进行验证
-        for (let section of sections) {
-            const inputs = document.querySelectorAll(`#${section} input[type="number"]`);
-            const values = [];
-
-            // 检查是否有未填的输入框
-            for (let input of inputs) {
-                if (input.value === "") {
-                    alert(`请确保 ${section} 内的所有输入框都已填写。`);
-                    isValid = false;
-                    event.preventDefault(); // 阻止表单提交
-                    return; // 跳出循环
-                }
-                values.push(Number(input.value));
-            }
-            console.log('Form isValid:', isValid);
-
-
-            // 检查是否有重复的值
-            const uniqueValues = [...new Set(values)];
-            if (uniqueValues.length !== values.length) {
-                alert(`${section} 内的排序1-4不能重复。`);
-                isValid = false;
-                event.preventDefault(); // 阻止表单提交
-                return; // 跳出循环
-            }
-
-            // 检查是否所有值都在1到4之间
-            for (let value of values) {
-                if (value < 1 || value > 4) {
-                    alert(`${section} 内的排序的值必须在1到4之间。`);
-                    isValid = false;
-                    event.preventDefault(); // 阻止表单提交
-                    return; // 跳出循环
-                }
-            }
-        }
-
-        // 如果有任何验证失败，阻止表单提交
-        if (isValid) {
-            alert("表單已成功提交，感謝撥空填答！");
-            // 清空表单输入内容
-            
-        }
-    });
-});
-
-
-
 function get_experiment_image(callback){
 	$.ajax({
 		url: "../php/ajax_load_face_image.php",
@@ -73,6 +19,7 @@ function shuffleElements(parent) {
     }
 }
 
+
 $(document).ready( function () {
 
 	get_experiment_image(function(response) {
@@ -86,12 +33,47 @@ $(document).ready( function () {
     		shuffleElements(document.getElementById('blue-section'));
     		shuffleElements(document.getElementById('yellow-section'));
 
+            $('#contain-experiment').show();
+
 		} else{
 			$('#contain-experiment').hide();
 		}
 	});
 
-    //使用者反饋
+
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const sections = ['green-section', 'red-section', 'blue-section', 'yellow-section'];
+        
+        for (let section of sections) {
+            const inputs = document.querySelectorAll(`#${section} input[type="number"]`);
+            const values = [];
+
+            for (let input of inputs) {
+                if (input.value === "") {     
+                    document.getElementById(`${section}`).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    alert(`請確保所有輸入框皆已填寫`);
+                    return false;
+                } else{
+                    values.push(Number(input.value));
+                }
+            }
+
+            const uniqueValues = [...new Set(values)];
+            if (uniqueValues.length !== values.length) {
+                document.getElementById(`${section}`).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                alert(`排序不得重複`);
+                return false;
+            } 
+        }
+        this.submit();
+    });
 
 });
 
