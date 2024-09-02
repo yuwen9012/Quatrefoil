@@ -20,7 +20,7 @@ function face_detect(gender, lenses, hair_dying){
                 	response = JSON.parse(response);
             	}
 			} catch (e){
-				alert('發生錯誤，請稍後再試(Error xxx)')
+				alert('發生錯誤，請稍後再試')
 			}
 
 			if (response.state){
@@ -40,7 +40,7 @@ function face_detect(gender, lenses, hair_dying){
 			}
 		},
 		error: function(jqXHR) {
-            alert("發生錯誤，請稍後再試(Error xxx)");
+            alert("發生錯誤，請稍後再試");
 		}
 	});
 }

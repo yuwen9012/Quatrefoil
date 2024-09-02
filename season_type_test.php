@@ -46,11 +46,11 @@
                     <p class="p1-1">男</p>
                     <p class="p1-2">女</p>
                     <label>
-                        <input type="radio" class="btn" name="gender" value="1" required>
+                        <input type="radio" class="btn" name="gender" value="man" required>
                         <span class="custom-btn"></span>
                     </label>
                     <label>
-                        <input type="radio" class="btn" name="gender" value="0">
+                        <input type="radio" class="btn" name="gender" value="women">
                         <span class="custom-btn"></span>
                     </label>
                 </div>
@@ -59,11 +59,11 @@
                     <p class="p1-3">無變色片</p>
                     <p class="p1-4">有變色片</p>
                     <label>
-                        <input type="radio" class="btn" name="lenses" value="1" required>
+                        <input type="radio" class="btn" name="lenses" value="no" required>
                         <span class="custom-btn1"></span>
                     </label>
                     <label>
-                        <input type="radio" class="btn" name="lenses" value="0">
+                        <input type="radio" class="btn" name="lenses" value="yes">
                         <span class="custom-btn1"></span>
                     </label>
                 </div>
@@ -72,11 +72,11 @@
                     <p class="p1-5">無染髮</p>
                     <p class="p1-6">有染髮</p>
                     <label>
-                        <input type="radio" class="btn" name="hair_dying" value="1" required>
+                        <input type="radio" class="btn" name="hair_dying" value="no" required>
                         <span class="custom-btn2"></span>
                     </label>
                     <label>
-                        <input type="radio" class="btn" name="hair_dying" value="0">
+                        <input type="radio" class="btn" name="hair_dying" value="yes">
                         <span class="custom-btn2"></span>
                     </label>
                 </div>

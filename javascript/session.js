@@ -9,10 +9,7 @@ function get_session(callback){
 			} else {
 				callback(response);
 			}
-		},
-		error: function(jqXHR) {
-            console.log(jqXHR.readyState+": "+ jqXHR.status);
-        }
+		}
 	});
 }
 
@@ -25,9 +22,6 @@ function check_session() {
 			if (response.loggedin){
 				window.location.href="home.php";
 			} 
-		},
-		error: function(jqXHR) {
-            console.log(jqXHR.readyState+": "+ jqXHR.status);
-        }
+		}
 	});
 }

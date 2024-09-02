@@ -39,12 +39,12 @@
       
     <div class="register">
       <h3>還沒有帳號嗎?</h3>
-      <div>註冊會員免費享有以下功能</div>
+      <!-- <div>註冊會員免費享有以下功能</div>
       <ul>
         <li>四季衣櫃</li>
         <li>四季論壇</li>
         <li>四季測驗服裝推薦</li>
-      </ul>
+      </ul> -->
       <button id="go_register" class="btn primary" onclick="locat_register()">去註冊</button>
     </div>
   

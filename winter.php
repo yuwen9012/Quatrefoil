@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/winter.css">
 
-    <title>Winter</title>
+    <title>四季更褶 | 冬季型</title>
 </head>
 <body>
     <?php include "navbar.php"; ?> 

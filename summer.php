@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/summer.css">
 
-    <title>summer</title>
+    <title>四季更褶 | 夏季型</title>
 </head>
 <body>
     <?php include "navbar.php"; ?> 

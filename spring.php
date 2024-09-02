@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/spring.css">
 
-    <title>spring</title>
+    <title>四季更褶 | 秋季型</title>
 </head>
 <body>
     <?php include "navbar.php"; ?> 

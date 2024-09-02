@@ -28,7 +28,6 @@ function email_availability(){
             }
         },
         error: function(jqXHR) {
-            console.log(jqXHR.readyState+": "+ jqXHR.status);
             $("#error_msg").text("發生錯誤，請稍後再試");
         }
     });

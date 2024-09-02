@@ -1,4 +1,9 @@
 /* 基本樣式 */
+
+#contain-experiment{
+   display: none;
+}
+
 h2 {
     font-family: 'Zen Kaku Gothic Antique';
     font-style: normal;
