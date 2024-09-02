@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-09-02 21:38:10
+-- 產生時間： 2024-09-02 21:37:57
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -24,17 +24,14 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `season_test`
+-- 資料表結構 `users`
 --
 
-CREATE TABLE `season_test` (
+CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `image_name` varchar(50) NOT NULL,
-  `gender` varchar(10) NOT NULL,
-  `hair_dying` varchar(10) NOT NULL,
-  `lenses` varchar(10) NOT NULL,
-  `type` varchar(10) NOT NULL,
-  `timestamp` timestamp(6) NOT NULL DEFAULT current_timestamp(6)
+  `email` varchar(100) NOT NULL,
+  `userpwd` varchar(50) NOT NULL,
+  `premium` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -42,19 +39,20 @@ CREATE TABLE `season_test` (
 --
 
 --
--- 資料表索引 `season_test`
+-- 資料表索引 `users`
 --
-ALTER TABLE `season_test`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`email`);
 
 --
 -- 在傾印的資料表使用自動遞增(AUTO_INCREMENT)
 --
 
 --
--- 使用資料表自動遞增(AUTO_INCREMENT) `season_test`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `users`
 --
-ALTER TABLE `season_test`
+ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
