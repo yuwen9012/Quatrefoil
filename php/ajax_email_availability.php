@@ -7,7 +7,7 @@ $response= array();
 $select_db= mysqli_select_db($db_link, "quatrefoil");
 if(!$select_db) {
 	$response['state']= False;
-	$response['msg']= "發生錯誤，請稍後再試(db)";
+	$response['msg']= "發生錯誤，請稍後再試";
 }else{
 	$email= $_POST['email'];
 

@@ -6,7 +6,7 @@ $state=0;
 $select_db= mysqli_select_db($db_link, "quatrefoil");
 
 if(!$select_db) {
-	$response= "發生錯誤，請稍後再試(database error)";
+	$response= "發生錯誤，請稍後再試";
 	$select_db->close();
 } else {
 	$email= $_POST['email'];
@@ -20,11 +20,11 @@ if(!$select_db) {
 			$state=1; 
     	    $response = "註冊成功，請重新登入";
    		} else {
-        	$response = "發生錯誤，請稍後再試(insert error)";
+        	$response = "發生錯誤，請稍後再試";
     	}
 		
 	} else {
-		$response = "發生錯誤，請稍後再試(null data)";
+		$response = "發生錯誤，請稍後再試";
 	}
 	$sql_insert->close();
 }

@@ -7,7 +7,7 @@ $response=array();
 $select_db= mysqli_select_db($db_link, "quatrefoil");
 
 if(!$select_db) {
-	$response= "發生錯誤，請稍後再試(database error)";
+	$response= "發生錯誤，請稍後再試";
 } else {
 	$email= $_SESSION['email'];
 	$oldpwd= $_POST['oldpwd'];
@@ -29,7 +29,7 @@ if(!$select_db) {
 			if ($sql_update->execute()) {
     	    	$response = "密碼修改成功";
    			} else {
-        		$response = "發生錯誤，請稍後再試(update error)";
+        		$response = "發生錯誤，請稍後再試";
     		}
     		$sql_update->close();
 		} else{
@@ -38,7 +38,7 @@ if(!$select_db) {
 		}
 		
 	} else {
-		$response = "發生錯誤，請稍後再試(null data)";
+		$response = "發生錯誤，請稍後再試";
 	}
 }	
 

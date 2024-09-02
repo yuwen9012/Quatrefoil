@@ -10,7 +10,7 @@ if(!$db_link){
 
     $response = array(
         "state" => false,
-        "msg" => "發生錯誤，請稍後再試(Error xxx)"
+        "msg" => "發生錯誤，請稍後再試"
     );
 
     echo json_encode($response);

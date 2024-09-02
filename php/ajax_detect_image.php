@@ -8,7 +8,7 @@ include("connect.php");
 
 $select_db= mysqli_select_db($db_link, "quatrefoil");
 if(!$select_db) {
-	$response['msg']= "發生錯誤，請稍後再試(Error xx1)";
+	$response['msg']= "發生錯誤，請稍後再試";
 }else{
 
 	$image= $_FILES['photo'];
@@ -43,7 +43,7 @@ if(!$select_db) {
                     $_SESSION['season']= $message;
                     $_SESSION['experiment_img']= $image_name;
                 } else{
-                	$response['msg']= '發生錯誤，請稍後再試(Error xx2)';
+                	$response['msg']= '發生錯誤，請稍後再試';
                 }
     		
     		} elseif ($message=='imgerr01') {
@@ -53,11 +53,11 @@ if(!$select_db) {
     		} elseif ($message=='imgerr03'){
                 $response['msg']= '無法偵測圖片，請更換照片後再次嘗試';
 			} elseif ($message=='pyerr01'){
-                $response['msg']= '發生錯誤，請稍後再試(Error xx3)';
+                $response['msg']= '發生錯誤，請稍後再試(Error 1)';
     		} elseif ($message=='pyerr02') {
-    			$response['msg']= '發生錯誤，請稍後再試(Error xx4)';
+    			$response['msg']= '發生錯誤，請稍後再試(Error 2)';
     	    } else{
-    		    $response['msg']= '發生錯誤，請稍後再試(Error xx5)';
+    		    $response['msg']= '發生錯誤，請稍後再試(Error 3)';
     	    }
 
         } else {

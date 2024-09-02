@@ -27,8 +27,8 @@ if (isset($email)){
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';  // 指定SMTP伺服器
             $mail->SMTPAuth   = true;
-            $mail->Username = "informationsystem2024@gmail.com"; // SMTP帳號
-            $mail->Password = "jglvyfrrjdakjcko"; // SMTP密碼
+            $mail->Username = "quatrefoil4season@gmail.com"; // SMTP帳號
+            $mail->Password = "dqqistulltvnpiuu"; // SMTP密碼
             $mail->SMTPSecure = 'tls'; // 啟用TLS加密
             $mail->Port       = 587; // 設置連接埠
 
@@ -50,11 +50,11 @@ if (isset($email)){
         }
 
     } else{
-        $response= "發生錯誤，請稍後再試(sql error)";
+        $response= "發生錯誤，請稍後再試";
     }
 
 } else{
-    $response= "發生錯誤，請稍後再試(null data)";
+    $response= "發生錯誤，請稍後再試";
 }
 
 function generateRandomPassword($length = 8) {
