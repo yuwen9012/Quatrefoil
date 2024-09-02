@@ -85,5 +85,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         echo "插入数据时出错: " . $stmt->error;
     }
+
+    // 删除特定的 session 变量
+    unset($_SESSION['season']);
+    unset($_SESSION['experiment_img']);
 }
 ?>
