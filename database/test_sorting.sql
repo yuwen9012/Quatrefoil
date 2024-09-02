@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-09-02 03:12:12
--- 伺服器版本： 10.4.21-MariaDB
--- PHP 版本： 8.0.10
+-- 產生時間： 2024-09-02 12:20:55
+-- 伺服器版本： 10.4.32-MariaDB
+-- PHP 版本： 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 資料庫: `quatrefoil`
+-- 資料庫： `quatrefoil`
 --
 
 -- --------------------------------------------------------
@@ -46,16 +46,8 @@ CREATE TABLE `test_sorting` (
   `autumn_4` int(5) NOT NULL,
   `spring_4` int(5) NOT NULL,
   `season` varchar(10) NOT NULL,
-  `image_name` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- 傾印資料表的資料 `test_sorting`
---
-
-INSERT INTO `test_sorting` (`id`, `winter_1`, `summer_1`, `autumn_1`, `spring_1`, `winter_2`, `summer_2`, `autumn_2`, `spring_2`, `winter_3`, `summer_3`, `autumn_3`, `spring_3`, `winter_4`, `summer_4`, `autumn_4`, `spring_4`, `season`, `image_name`) VALUES
-(1, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, '', ''),
-(2, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, '', '');
+  `image_name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- 已傾印資料表的索引
@@ -75,7 +67,7 @@ ALTER TABLE `test_sorting`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `test_sorting`
 --
 ALTER TABLE `test_sorting`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
