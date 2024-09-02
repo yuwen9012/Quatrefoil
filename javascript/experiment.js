@@ -73,6 +73,7 @@ $(document).ready( function () {
             } 
         }
         this.submit();
+	alert(`表單上傳成功，感謝撥空填答`);
     });
 
 });
