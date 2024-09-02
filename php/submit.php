@@ -75,6 +75,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // 所有檢查都通過，執行插入操作
     if ($stmt->execute()) {
         echo "表單上傳成功";
+        
+        // 获取来源页面
+        $referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : 'index.php';
+        
+        // 通过 JavaScript 进行重定向
+        echo "<script>window.location.href = '$referer';</script>";
         exit();
     } else {
         echo "插入数据时出错: " . $stmt->error;
