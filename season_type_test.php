@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="javascript/season_type_test.js"></script>
     
-    <title>四季色彩測驗</title>
+    <title>四季色彩分析</title>
 </head>
 <body>
 

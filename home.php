@@ -20,7 +20,7 @@
     <title>四季更褶 | 首頁</title>
 </head>
 <body>
-     <? include "navbar.php"?>            
+     <?php include "navbar.php"?>            
   <br>                
   <br>                
 
