@@ -232,11 +232,6 @@
     align-items: center;
 }
 
-@media (max-width: 767.98px) {
-   .image-item {
-       margin-bottom: 50px; /* 這裡你可以調整數值以增加所需的空間 */
-   }
-}
 
 .image-item img {
    max-width: 100%; /* 確保圖片不會超出容器寬度 */
