@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/spring.css">
 
-    <title>四季更褶 | 秋季型</title>
+    <title>四季更褶 | 春季型</title>
 </head>
 <body>
     <?php include "navbar.php"; ?> 
@@ -102,6 +102,12 @@
         </div><br><br><br>
     </div>
 
+
+
+    <!-- 實驗區塊 -->
+    <?php include "experiment.php"; ?>     
+
+
     <!-- 商品區塊 -->
     <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
         <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
@@ -110,8 +116,7 @@
         <br><br>
     </div>
 
-    <!-- 實驗區塊 -->
-    <?php include "experiment.php"; ?> 
+
     <!-- 底部區塊 -->
     <?php include "footer.php"; ?> 
 
