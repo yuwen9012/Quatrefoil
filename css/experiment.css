@@ -54,7 +54,7 @@ h2 {
  
  @media (max-width: 767.98px) {
     .image-item {
-        margin-bottom: 50px; /* 為小螢幕增加下方間距 */
+        margin-bottom: 0px; /* 為小螢幕增加下方間距 */
     }
  }
  
