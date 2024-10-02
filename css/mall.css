@@ -1,0 +1,96 @@
+.product-card {
+    border: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s;
+}
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cart-icon {
+    cursor: pointer;
+}
+
+.btn_men,.btn_woman{
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;   
+    width: 150px;
+    height: 49px;   
+    background: #409FAC;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #292929;
+    font-weight: bold;
+}
+
+.card-price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #EE4D2D;
+    font-weight: bold;
+}
+
+#pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 更改當前分頁的按鈕顏色 */
+.pagination .page-item.active .page-link {
+    background-color: #409FAC; /* 活動按鈕背景色 */
+    color: white; /* 活動按鈕文字顏色 */
+    border-color: #409FAC; /* 活動按鈕邊框顏色 */
+}
+
+/* 調整側邊欄連結的樣式 */
+.nav-link {
+    color: #000; /* 設定一般連結文字顏色 */
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc; /* 分隔線的樣式和顏色 */
+    padding: 5px 0;
+}
+
+.nav-link.active{
+    font-weight: bold;
+    color: #409FAC;
+}
+.nav-link{
+    font-weight: bold;
+    text-align: center;
+    margin-right:90px;
+}
+.nav-link:hover{
+    font-weight: bold;
+    color: #409FAC;
+}
+
+.item + .item {
+    margin-top: 15px; /* 調整男裝和女裝按鈕之間的距離 */
+    
+}
+
+/* 調整折疊內容的間距 */
+.ms-3 {
+    margin-left: 15px; /* 微調左側間距 */
+}
+
+/* 去除底線 */
+.nav-link {
+    text-decoration: none;
+}
+
