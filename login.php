@@ -16,12 +16,9 @@
 
 <body>
 
-  <?php
-    include ("navbar.php");
-  ?>
+  <?php include ("navbar.php"); ?>
   
   <main>
-
     <div class='login_contain'>
       <h3>電子郵件登入</h3>
       <form method="post" id="form">
@@ -47,8 +44,9 @@
       </ul> -->
       <button id="go_register" class="btn primary" onclick="locat_register()">去註冊</button>
     </div>
-  
   </main>
+
+  <?php include "footer.php"?>
   
 </body>
 </html>

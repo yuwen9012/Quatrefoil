@@ -15,9 +15,7 @@
 </head>
 <body>
 
-  <?php
-    include ("navbar.php");
-  ?>
+  <?php include ("navbar.php"); ?>
 
   <main>
     <div class="content">
@@ -32,9 +30,8 @@
         <a class="link" href="login.php">回登入頁</a>
       </div>
   	</div>
-  	
-
   </main>
+  <?php include "footer.php"; ?>
 
 </body>
 </html>

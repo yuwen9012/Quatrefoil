@@ -186,23 +186,9 @@
         </div><br><br>
     </div>
 
-    <!-- 第五區塊 -->
-    <div class="container-fluid block5">
-        <div class="row">
-            <div class="col-4">
-            </div>
+    <?php include "footer.php"; ?>
 
-            <div class="col-4">
-                <p class="p-5">四季更褶<br>Quatrefoil</p>
-            </div>
-
-
-            <div class="col-4">
-            </div>
-        </div>
-    </div>
-
-<body>
+</body>
 </html>
 
 

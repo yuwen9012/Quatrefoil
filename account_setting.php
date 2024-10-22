@@ -18,9 +18,7 @@
 </head>
 <body>
   
-  <?php
-    include ("navbar.php");
-  ?>
+  <?php include ("navbar.php"); ?>
 
   <main>
     <div>
@@ -46,8 +44,8 @@
         <input class="btn danger" type="submit" value="登出"/>
       </form>
     </div>
-
   </main>
+  <?php include "footer.php"; ?>
 
 </body>
 </html>

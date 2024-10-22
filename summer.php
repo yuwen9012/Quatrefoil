@@ -106,11 +106,6 @@
     </div>
 
     
-   
-    <!-- 實驗區塊 -->
-    <?php include "experiment.php"; ?>    
-    
-
     <!-- 商品區塊 -->
     <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
         <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
@@ -120,6 +115,8 @@
     </div>
 
 
+    <!-- 實驗區塊 -->
+    <?php include "experiment.php"; ?> 
     <!-- 底部區塊 -->
     <?php include "footer.php"; ?> 
 
@@ -200,7 +197,7 @@
     form.submit();
 }
 </script>
-<body>
+</body>
 </html>
 
 

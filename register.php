@@ -15,9 +15,7 @@
 </head>
 <body>
   
-  <?php
-    include ("navbar.php");
-  ?>
+  <?php include ("navbar.php"); ?>
 
 <main>  
   <div class='contain'>
@@ -34,9 +32,10 @@
       <div class="hint">
         已有帳號? <a class="link" href="login.php">登入</a>
       </div>
-
     </div>
 </main>
+
+<?php include "footer.php"; ?>
   
 </body>
 </html>

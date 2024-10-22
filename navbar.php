@@ -13,7 +13,7 @@
     </div>
     <div class='nav_center'>
       <a href="season_type_test.php"><span>四季色彩分析</span></a>
-      <a href="#"><span>四季商城</span></a>
+      <a href="mall.php?gender=女裝&type=短袖"><span>四季商城</span></a>
     </div>
     <div class='nav_right'>
     <a href="account_setting.php"><img src="images/icon/user.png" width="23px" height="23px"/></a>

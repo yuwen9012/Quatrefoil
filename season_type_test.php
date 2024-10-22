@@ -28,9 +28,7 @@
   <div id='loading_animation'>
       <img src="images/icon/loading.gif" alt="正在分析四季色中...">
   </div>
-  <?php 
-    include('navbar.php');
-  ?>
+  <?php include('navbar.php'); ?>
 
      <!-- 第一區塊 -->
   <div class="container-fluid block" style="background-color: #409FAC;">
@@ -134,15 +132,7 @@
            <br><br>
         </div>
 
-    <!-- 第三區塊 -->
-    <div class="container-fluid block5">
-        <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col-8">
-                <p class="p-5">四季更褶<br>Quatrefoil</p>
-            </div>
-            <div class="col-2">
-            </div>
-        </div>
-    </div>
+    <?php include "footer.php"; ?>
+
+</body>
+</html>
