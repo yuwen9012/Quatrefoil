@@ -1,3 +1,147 @@
+.link{
+    text-decoration: none;
+}
+
+#filter{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);;
+    display: none;
+    z-index: 9999;
+}
+
+#filter_content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    background-color: #FFFFFF;
+    padding:20px;
+    border-radius: 10px;
+}
+
+#filterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filter_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.filter_label {
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.filter_tag {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tag{
+    display: inline-block;
+    padding: 2px 10px;
+    background: #FFFFFF;
+    border: 1.5px solid #409FAC;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color:#292929;
+}
+input[type="checkbox"]:checked + .tag {
+  background-color: #409FAC;
+  color: white;
+}
+
+.tag-spring{
+    border: 1.5px solid #FF7F8C;
+}
+input[type="checkbox"]:checked + .tag-spring {
+  background-color: #FF7F8C;
+  color: #292929;
+}
+
+.tag-summer{
+    border:1.5px solid #1FB585;
+}
+input[type="checkbox"]:checked + .tag-summer {
+  background-color: #1FB585;
+  color: #292929;
+}
+
+.tag-autumn{
+    border:1.5px solid #ECA319;
+}
+input[type="checkbox"]:checked + .tag-autumn {
+  background-color: #ECA319;
+  color: #292929;
+}
+
+.tag-winter{
+    border:1.5px solid #4DBCE9;
+}
+input[type="checkbox"]:checked + .tag-winter {
+  background-color: #4DBCE9;
+  color: #292929;
+}
+
+input[type="number"]{
+    width: 70px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1.5px solid #D9D9D9;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="number"]:focus {
+    border: 1.5px solid #D9D9D9;
+    outline: none;
+}
+
+
+input[type="reset"]{
+    box-sizing: border-box;
+    width: 70px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: #FFFFFF;
+    border: 1.5px solid #409FAC;
+    border-radius: 30px;
+    color: #292929;
+}
+
+input[type="submit"]{
+    box-sizing: border-box;
+    width: 70px;
+    height: 34px;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: #409FAC;
+    border: 1.5px solid #409FAC;
+    border-radius: 30px;
+    color: #FFFFFF;
+
+}
+
 .product-card {
     border: 1px solid #e0e0e0;
     transition: box-shadow 0.3s;
@@ -25,6 +169,8 @@
     color:white;
     font-weight: bold;
     font-size: 20px;
+    min-width: 50px;
+    max-width: 150px;
 }
 
 .card-title{
@@ -57,40 +203,85 @@
     border-color: #409FAC; /* 活動按鈕邊框顏色 */
 }
 
+.top-collapse {
+    gap: 10px 10px;
+    flex-wrap: wrap;
+}
+
+.top-collapse-menu-men {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    z-index: 3;
+}
+
+.top-collapse-menu-women {
+    display: inline-block;
+    width: 100px;
+    height: 36px;
+    z-index: 2;
+}
+
+.top-menu-content {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    overflow: hidden;
+    border-radius: 0px 0px 6px 6px;
+}
+
+.top-menu-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;   
+    width: 100%;
+    height: 36px;   
+    background: #409FAC;
+    border-radius: 8px;
+    border: none;
+    color:white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.top-item {
+    border-bottom: 1px solid #ccc; /* 分隔線的樣式和顏色 */
+    background-color: #FFFFFF;
+}
+
+.menu-content {
+    margin-top: 5px;
+}
+
+.btn-toolbar .input-group{
+    flex-wrap: nowrap;
+}
+
+.item {
+    border-bottom: 1px solid #ccc; /* 分隔線的樣式和顏色 */
+    max-width: 150px;
+}
+
 /* 調整側邊欄連結的樣式 */
 .nav-link {
-    color: #000; /* 設定一般連結文字顏色 */
-    padding: 8px 0;
-    border-bottom: 1px solid #ccc; /* 分隔線的樣式和顏色 */
-    padding: 5px 0;
-}
-
-.nav-link.active{
-    font-weight: bold;
-    color: #409FAC;
-}
-.nav-link{
+    color: #292929; /* 設定一般連結文字顏色 */
     font-weight: bold;
     text-align: center;
-    margin-right:90px;
+    text-decoration: none;
+    max-width: 150px;
+    padding:10px 0;
 }
-.nav-link:hover{
-    font-weight: bold;
+
+.nav-link:active{
     color: #409FAC;
 }
 
-.item + .item {
-    margin-top: 15px; /* 調整男裝和女裝按鈕之間的距離 */
-    
+.nav-link:hover{
+    color: #409FAC;
 }
 
 /* 調整折疊內容的間距 */
 .ms-3 {
-    margin-left: 15px; /* 微調左側間距 */
+    margin: 0px !important;
 }
-
-/* 去除底線 */
-.nav-link {
-    text-decoration: none;
-}
-
