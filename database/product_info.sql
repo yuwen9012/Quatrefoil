@@ -63,7 +63,7 @@ CREATE TABLE `product_info` (
   `E1` int(1) DEFAULT NULL,
   `E2` int(1) DEFAULT NULL,
   `filepath` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- 傾印資料表的資料 `product_info`
