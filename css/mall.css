@@ -80,7 +80,7 @@ input[type="checkbox"]:checked + .tag-spring {
 }
 input[type="checkbox"]:checked + .tag-summer {
   background-color: #1FB585;
-  color: #292929;
+  color: #FFFFFF;
 }
 
 .tag-autumn{
