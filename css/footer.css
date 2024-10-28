@@ -1,11 +1,12 @@
-.service {
+.link-service {
+    all: unset;
     position: fixed;
     top: 100%;
     left: 100%;
     transform: translate(-150%, -150%);
     z-index: 1000;
 
-    width: 20%;
+    width: 20%; 
     height: auto;
     max-width: 50px;
     max-height: 50px;

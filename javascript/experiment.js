@@ -36,6 +36,7 @@ $(document).ready( function () {
             $('#contain-experiment').show();
 
 		} else{
+            $('#contain-experiment').html('');
 			$('#contain-experiment').hide();
 		}
 	});

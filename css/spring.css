@@ -5,121 +5,121 @@
 }
 
 .box1{
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width:100%;
-   background-color: #FFFFFF;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   text-align: center;
-   border-radius: 15px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    width:100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 15px;
 }
 
 .box2{
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width:100%;
-   height: 60px;
-   background-color: #b79363;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: white;
-   margin: 2px 0px ;
-   padding: 3px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    width:100%;
+    height: 60px;
+    background-color: #b79363;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 2px 0px ;
+    padding: 3px;
 }
 
 .box3{
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width:100%;
-   height: 60px;
-   background-color: #e7d9bc;
-   color:#6a5f56;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 2px 0px ;
-   padding: 5px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    width:100%;
+    height: 60px;
+    background-color: #e7d9bc;
+    color:#6a5f56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0px ;
+    padding: 5px;
 }
 
 .box4{
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width:100%;
-   height:150px;
-   background-color: #816d4c;
-   color:#FFFFFF;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 2px 0px;
-   padding: 5px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    width:100%;
+    height:150px;
+    background-color: #816d4c;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0px;
+    padding: 5px;
 }
 
 .box5{
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width:100%;
-   height:97px;
-   background-color: #6b594c;
-   color:#FFFFFF;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 2px 0px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    width:100%;
+    height:97px;
+    background-color: #6b594c;
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0px;
 }
 
 .box6{
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width:100%;
-   height:150px;
-   background-color: #e7d9bc;
-   color:#6a5f56;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 2px 0px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    width:100%;
+    height:150px;
+    background-color: #e7d9bc;
+    color:#6a5f56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0px;
 }
 
 .box7{
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   width:100%;
-   height:97px;
-   background-color: #e7d9bc;
-   color:#6a5f56;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: 2px 0px;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    width:100%;
+    height:97px;
+    background-color: #e7d9bc;
+    color:#6a5f56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0px;
 }
 
 @media (max-width: 575.98px) {
-   .box3,.box6,.box7{
-      margin-top: -2px;
-      margin-bottom: 25px;
-   }
- }
- @media (max-width: 575.98px) {
-   .box4,.box5{
-      height:60px ;
-   }
- }
+    .box3,.box6,.box7{
+        margin-top: -2px;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 575.98px) {
+    .box4,.box5{
+        height:60px ;
+    }
+}
 
 /* 標題與文字樣式 */
 .t1 {
-   font-size: 30px; /* 根據需求調整 */
-   color: #292929; /* 根據需求調整 */
-   font-weight: bold;
-   text-align: left;
-   margin-top: 20px; /* 調整這個值來增加間距 */
-   padding-top: 20px; /* 或者使用 padding-top */
-   line-height: 1.5;
+    font-size: 30px; /* 根據需求調整 */
+    color: #292929; /* 根據需求調整 */
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px; /* 調整這個值來增加間距 */
+    padding-top: 20px; /* 或者使用 padding-top */
+    line-height: 1.5;
 }
 
 .t1 span {
@@ -130,95 +130,48 @@
 }
 
 .t2{
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 18px;
-   display: flex;
-   align-items: center;
-   color: #E69A8A;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #E69A8A;
 }
 
 .t3{
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 18px;
-   display: flex;
-   align-items: center;
-   color: #685D5D;
-   text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #685D5D;
+    text-align: left;
 }
 
 /* 卡片樣式 */
-.card-title {
-   margin: 0 auto;
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.2; /* 使用相對行高避免重疊 */
-   padding-top: 5px;
-   color: #000000;
-   text-align: center; /* 文字水平置中 */
-   white-space: nowrap; /* 禁止換行 */
-   overflow: hidden; /* 隱藏溢出的文字 */
-   text-overflow: ellipsis; /* 溢出的文字用省略號表示 */
-}
-
-.card-price {
-   margin: 0 auto;
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 18px;
-   line-height: 1.2; /* 使用相對行高避免重疊 */
-   padding-top: 8px;
-   color: #EE4D2D;
-   text-align: center; /* 文字水平置中 */
-   white-space: nowrap; /* 禁止換行 */
-   overflow: hidden; /* 隱藏溢出的文字 */
-   text-overflow: ellipsis; /* 溢出的文字用省略號表示 */
-}
-
 .card-content {
-   margin: 0 auto;
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 12px;
-   line-height: 1.2; /* 使用相對行高避免重疊 */
-   color: #000000;
-   padding-top: 10px;
-   text-align: center; /* 文字水平置中 */
-   white-space: nowrap; /* 禁止換行 */
-   overflow: hidden; /* 隱藏溢出的文字 */
-   text-overflow: ellipsis; /* 溢出的文字用省略號表示 */
-   height: auto; /* 讓高度自適應內容 */
-}
-
-.card-img-top {
-   height: 30vh; /* 固定高度 */
-   width: 30vh; /* 固定寬度 */
-   max-width: 100%;
-   object-fit: cover; /* 保持圖片比例，裁剪圖片以填滿容器 */
-   display: block; /* 使圖片顯示為塊級元素 */
-   margin: 0 auto; /* 確保圖片在父元素內水平置中 */
-   border-radius: 0; /* 確保圖片本身不應用圓角 */
+    margin: 0 auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2; /* 使用相對行高避免重疊 */
+    color: #000000;
+    padding-top: 10px;
+    text-align: center; /* 文字水平置中 */
+    white-space: nowrap; /* 禁止換行 */
+    overflow: hidden; /* 隱藏溢出的文字 */
+    text-overflow: ellipsis; /* 溢出的文字用省略號表示 */
+    height: auto; /* 讓高度自適應內容 */
 }
 
 .card {
-   width: 100%; /* 讓卡片寬度填滿容器 */
-   padding: 10px; /* 控制內邊距，確保內容不會緊貼卡片邊緣 */
-   box-sizing: border-box; /* 確保 padding 包含在卡片的總寬度內 */
-   overflow: hidden; /* 確保內容不會超出容器邊界 */
-}
-
-.card-body {
-   width: 100%; /* 讓卡片寬度填滿容器 */
-   height: 100%;
-   padding: 10px; /* 控制內邊距，確保內容不會緊貼卡片邊緣 */
-   box-sizing: border-box; /* 確保 padding 包含在卡片的總寬度內 */
+    width: 100%; /* 讓卡片寬度填滿容器 */
+    padding: 10px; /* 控制內邊距，確保內容不會緊貼卡片邊緣 */
+    box-sizing: border-box; /* 確保 padding 包含在卡片的總寬度內 */
+    overflow: hidden; /* 確保內容不會超出容器邊界 */
 }
 
 /* 圖片排列樣式 */
@@ -234,14 +187,14 @@
 }
 
 @media (max-width: 767.98px) {
-   .image-item {
-       margin-bottom: 50px; /* 這裡你可以調整數值以增加所需的空間 */
-   }
+    .image-item {
+        margin-bottom: 50px; /* 這裡你可以調整數值以增加所需的空間 */
+    }
 }
 
 .image-item img {
-   max-width: 100%; /* 確保圖片不會超出容器寬度 */
-   height: auto; /* 讓高度自動調整以保持圖片比例 */
+    max-width: 100%; /* 確保圖片不會超出容器寬度 */
+    height: auto; /* 讓高度自動調整以保持圖片比例 */
 }
 
 .image-item input {
@@ -256,20 +209,20 @@
 
 /* 提交按鈕樣式 */
 .submit-btn {
-   background-color: #409FAC;
-   color: #fff;
-   border-radius: 20px;
-   padding: 10px 20px;
-   transition: background-color 0.3s ease;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   border: none;
-   font-family: 'Zen Kaku Gothic Antique';
-   font-weight: 700;
-   display: block;
-   text-align: center;
-   margin: 20px auto; /* 確保在父容器中水平置中 */
-   max-width: 200px; /* 限制按鈕的最大寬度 */
-   width: 100%; /* 讓按鈕在小屏幕上自適應 */
+    background-color: #409FAC;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin: 20px auto; /* 確保在父容器中水平置中 */
+    max-width: 200px; /* 限制按鈕的最大寬度 */
+    width: 100%; /* 讓按鈕在小屏幕上自適應 */
 }
 
 /* 文字段落樣式 */
