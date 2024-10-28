@@ -40,6 +40,7 @@ if(!$select_db) {
                 	$response['msg']= $message;
                 	
                     session_start();
+                    $_SESSION['gender']= $gender;
                     $_SESSION['season']= $message;
                     $_SESSION['experiment_img']= $image_name;
                 } else{

@@ -76,7 +76,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($stmt->execute()) {
 
-        unset($_SESSION['season']);
         unset($_SESSION['experiment_img']);
         
         echo "<script>alert(`感謝您的回饋!`); window.location.href = '$referer';</script>";
