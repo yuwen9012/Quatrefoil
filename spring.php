@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/spring.css">
 
-    <title>四季更褶 | 秋季型</title>
+    <title>四季更褶 | 春季型</title>
 </head>
 <body>
     <?php include "navbar.php"; ?> 
@@ -103,92 +103,10 @@
     </div>
 
     <!-- 商品區塊 -->
-    <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
-        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
-             <div class="row d-flex justify-content-center" id="myGoods" style="width:80%; height: 70%; margin: 0 auto;">        
-             </div>
-        <br><br>
-    </div>
-
+    <?php include "recommend.php"; ?>
     <!-- 實驗區塊 -->
     <?php include "experiment.php"; ?> 
     <!-- 底部區塊 -->
     <?php include "footer.php"; ?> 
-
-<script>
-    var goods = [
-        {
-            'name':'針織圓領短袖上衣-小雞黃',
-            'price':439,
-            'content':'🐤 活潑亮眼💛展現甜美陽光氣質。', 
-            'image': 'images/spring_good1.png'
-        },
-        {
-            'name':'反摺中線短褲-寶寶藍',
-            'price':500,
-            'content':'🩵寬鬆版型☁️簡單搭配展現甜美。', 
-            'image': 'images/spring_good2.png'
-        },
-        {
-            'name':'丹寧寬鬆外套-粉色',
-            'price':549,
-            'content':'寬鬆設計，搭配短裙或牛仔褲，展現...', 
-            'image': 'images/spring_good3.png'
-        },
-        {
-            'name':'亞麻無袖半身裙套裝-蘋果綠',
-            'price':699,
-            'content':'打造夏日清新風格～輕盈舒適，隨性...', 
-            'image': 'images/spring_good4.png'
-        },
-        {
-            'name':'雙口袋秋日套裝-藍色',
-            'price':699,
-            'content':'🤍打造慵懶氣息～搭配涼鞋或平底鞋...', 
-            'image': 'images/spring_good5.png'
-        },
-        {
-            'name':'馬卡龍色學院風套裝-女童',
-            'price':699,
-            'content':'🌸甜美學院風必備🌸讓你輕鬆打造出...', 
-            'image': 'images/spring_good6.png'
-        },
-        {
-            'name':'圓領澎袖襯衫-柔黃色',
-            'price':439,
-            'content':'☀陽光女孩的必備單品！排扣短袖襯衫...', 
-            'image': 'images/spring_good7.png'
-        },
-        {
-            'name':'抽繩休閒短褲-粉橘色',
-            'price':300,
-            'content':'寬鬆剪裁，時尚百搭，展現自我風格✨', 
-            'image': 'images/spring_good8.png'
-        }
-    ];
-
-    for (let i = 0; i < goods.length; i++) {
-         let html = '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-2">' +
-               '<div class="card">' +
-               '<div class="card-body">' +
-               '<img class="card-img-top" src="' + goods[i].image + '" alt="' + goods[i].name + '圖片">' +
-               '<h5 class="card-title">' + goods[i].name + '</h5>' +
-               '<p class="card-price">$' + goods[i].price + '</p>' +
-               '<p class="card-content">' + goods[i].content + '</p>' +
-               '</div>' +
-               '</div>' +
-               '</div>';
-
-    $('#myGoods').append(html);       
-    }
-
-    function submitOrder() {
-    // 获取表单元素
-    var form = document.getElementById('orderForm');
-    
-    // 提交表单
-    form.submit();
-}
-</script>
 </body>
 </html>

@@ -23,9 +23,7 @@
 <body>
     <?php include "navbar.php"; ?> 
 
-
      <!-- NEW 第一區塊 -->
-
     <div class="container-fluid" style="background-color: #b5e2d4; height: flex; width:100%"><br><br><br>
         <div class="row">
             <div class="col-1"></div>
@@ -104,102 +102,12 @@
             <div class="col-1"></div>
         </div><br><br><br>
     </div>
-
-    
+ 
     <!-- 商品區塊 -->
-    <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
-        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
-             <div class="row d-flex justify-content-center" id="myGoods" style="width:80%; height: 70%; margin: 0 auto;">        
-             </div>
-        <br><br>
-    </div>
-
-
+    <?php include "recommend.php"; ?>
     <!-- 實驗區塊 -->
     <?php include "experiment.php"; ?> 
     <!-- 底部區塊 -->
     <?php include "footer.php"; ?> 
-
-
-    
-<script>
-    var goods = [
-        {
-            'name':'雪紡長袖襯衫-冷灰綠',
-            'price':398,
-            'content':'🩶展現紳士品格，打造優雅型男！🩶', 
-            'image': 'images/summer_good1.png'
-        },
-        {
-            'name':'綁帶錐形長褲-灰藍色',
-            'price':550,
-            'content':'🩵夏日舒適首選🩵 寬鬆剪裁，無拘...', 
-            'image': 'images/summer_good2.png'
-        },
-        {
-            'name':'純棉短袖襯衫-櫻花粉色',
-            'price':399,
-            'content':'春風拂面，型男新裝😍嚴選高質感...', 
-            'image': 'images/summer_good3.png'
-        },
-        {
-            'name':'棉質寬鬆短褲-灰藍色',
-            'price':495,
-            'content':'清爽利落，品味之選！灰藍色棉質...', 
-            'image': 'images/summer_good4.png'
-        },
-        {
-            'name':'清新配色V領排扣背心＋罩衫set',
-            'price':369,
-            'content':'💐優雅迷人，打造夏日浪漫💐 輕盈...', 
-            'image': 'images/summer_good5.png'
-        },
-        {
-            'name':'簡約合身長袖襯衫-淺藕粉',
-            'price':599,
-            'content':' 💼展現知性魅力，打造專業形象🩶', 
-            'image': 'images/summer_good6.png'
-        },
-        {
-            'name':'合身雙口袋短褲-薰衣草紫',
-            'price':349,
-            'content':'🪻彷彿來到寧靜的薰衣草花園～剪裁...', 
-            'image': 'images/summer_good7.png'
-        },
-        {
-            'name':'寬鬆棉質長褲-米灰色',
-            'price':450,
-            'content':'優雅舒適，職場新風尚！採用寬鬆版型...', 
-            'image': 'images/summer_good8.png'
-        }
-    ];
-
-    for (let i = 0; i < goods.length; i++) {
-         let html = '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-2">' +
-               '<div class="card">' +
-               '<div class="card-body">' +
-               '<img class="card-img-top" src="' + goods[i].image + '" alt="' + goods[i].name + '圖片">' +
-               '<h5 class="card-title">' + goods[i].name + '</h5>' +
-               '<p class="card-price">$' + goods[i].price + '</p>' +
-               '<p class="card-content">' + goods[i].content + '</p>' +
-               '</div>' +
-               '</div>' +
-               '</div>';
-
-    $('#myGoods').append(html);       
-    }
-
-    function submitOrder() {
-    // 获取表单元素
-    var form = document.getElementById('orderForm');
-    
-    // 提交表单
-    form.submit();
-}
-</script>
 </body>
 </html>
-
-
-
-

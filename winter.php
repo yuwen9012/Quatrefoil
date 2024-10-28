@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -103,92 +103,11 @@
     </div>
 
     <!-- 商品區塊 -->
-    <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
-        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
-             <div class="row d-flex justify-content-center" id="myGoods" style="width:80%; height: 70%; margin: 0 auto;">        
-             </div>
-        <br><br>
-    </div>
-
+    <?php include "recommend.php"; ?>
     <!-- 實驗區塊 -->
     <?php include "experiment.php"; ?> 
     <!-- 底部區塊 -->
     <?php include "footer.php"; ?> 
 
-<script>
-    var goods = [
-        {
-            'name':'純棉襯衫-白色',
-            'price':499,
-            'content':'🩵純粹百搭，極簡卻能打造多樣風格！', 
-            'image': 'images/winter_good1.png'
-        },
-        {
-            'name':'日系寬褲-黑色',
-            'price':680,
-            'content':'告別束縛感，展現你的自信風采🤗', 
-            'image': 'images/winter_good2.png'
-        },
-        {
-            'name':'男士時尚棉短褲',
-            'price':339,
-            'content':'☀️炎夏的時尚宣言！這款合身剪裁的...', 
-            'image': 'images/winter_good3.png'
-        },
-        {
-            'name':'亞麻窄管長褲-正紅色',
-            'price':499,
-            'content':'展現你的時尚態度！簡約設計...', 
-            'image': 'images/winter_good4.png'
-        },
-        {
-            'name':'日系寬鬆抽繩長褲-花瓣粉',
-            'price':549,
-            'content':'🩷自然隨性，搭配T恤或毛衣...', 
-            'image': 'images/winter_good5.png'
-        },
-        {
-            'name':'針織無袖＋短裙set-灰色',
-            'price':750,
-            'content':'🩶搭配珍珠項鍊與高跟鞋，展現優雅...', 
-            'image': 'images/winter_good6.png'
-        },
-        {
-            'name':'短版西裝外套-海軍藍',
-            'price':599,
-            'content':'💖 皮革長袖上衣，寬鬆版型，搭配...', 
-            'image': 'images/winter_good7.png'
-        },
-        {
-            'name':'立領無袖粗針織短洋裝-米白色',
-            'price':599,
-            'content':'🤍 簡約設計，搭配平底鞋或涼鞋...', 
-            'image': 'images/winter_good8.png'
-        }
-    ];
-
-    for (let i = 0; i < goods.length; i++) {
-         let html = '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-2">' +
-               '<div class="card">' +
-               '<div class="card-body">' +
-               '<img class="card-img-top" src="' + goods[i].image + '" alt="' + goods[i].name + '圖片">' +
-               '<h5 class="card-title">' + goods[i].name + '</h5>' +
-               '<p class="card-price">$' + goods[i].price + '</p>' +
-               '<p class="card-content">' + goods[i].content + '</p>' +
-               '</div>' +
-               '</div>' +
-               '</div>';
-
-    $('#myGoods').append(html);       
-    }
-
-    function submitOrder() {
-    // 获取表单元素
-    var form = document.getElementById('orderForm');
-    
-    // 提交表单
-    form.submit();
-}
-</script>
 </body>
 </html>

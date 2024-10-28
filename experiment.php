@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="css/experiment.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="javascript/experiment.js"></script>
 
-<!-- 實驗區塊 -->
 <div id= 'contain-experiment' class="container-fluid" style="background-color: #ffffff; margin-top: 40px;">
     <form id="orderForm" action="php/submit.php" method="POST" style="margin: 0 auto; max-width: 800px; margin-top: 40px;">
     
@@ -54,6 +52,12 @@
     <!-- 綠 -->
     <br><br><hr><br><br>  
     <!-- 紅 -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center" style="font-size: 26px;font-weight: 700; color: #409FAC;">哪種搭配看起來最協調？（輸入排序1-4）</h2>
+            <br>
+        </div>
+    </div>
     <div class="row g-0" id="red-section">
         <div class="col-6 col-md-3 image-item" data-id="4">
             <div class="face-container">
@@ -95,6 +99,12 @@
     <!-- 紅 -->    
     <br><br><hr><br><br>
     <!-- 藍 -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center" style="font-size: 26px;font-weight: 700; color: #409FAC;">哪種搭配看起來最協調？（輸入排序1-4）</h2>
+            <br>
+        </div>
+    </div>
     <div class="row g-0" id="blue-section">
         <div class="col-6 col-md-3 image-item" data-id="4">
             <div class="face-container">
@@ -136,6 +146,12 @@
     <!-- 藍 -->    
     <br><br><hr><br><br>
     <!-- 黃 -->
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center" style="font-size: 26px;font-weight: 700; color: #409FAC;">哪種搭配看起來最協調？（輸入排序1-4）</h2>
+            <br>
+        </div>
+    </div>
     <div class="row g-0" id="yellow-section">
         <div class="col-6 col-md-3 image-item" data-id="4">
             <div class="face-container">

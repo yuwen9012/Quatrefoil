@@ -103,92 +103,11 @@
     </div>
 
     <!-- 商品區塊 -->
-    <div class="container-fluid my-3 px-3" style="background-color: #fbfbfb; height: flex; ">
-        <p style="font-family: 'Inter';color: #000000;font-weight: 700; font-size: 20px; margin-bottom: 40px;"><br><br>根據測驗結果，為您推薦以下服裝單品：</p>
-             <div class="row d-flex justify-content-center" id="myGoods" style="width:80%; height: 70%; margin: 0 auto;">        
-             </div>
-        <br><br>
-    </div>
-
+    <?php include "recommend.php"; ?>
     <!-- 實驗區塊 -->
     <?php include "experiment.php"; ?> 
     <!-- 底部區塊 -->
     <?php include "footer.php"; ?> 
 
-<script>
-    var goods = [
-        {
-            'name':'復古無袖拼接棉衫-大地混色',
-            'price':549,
-            'content':'秋日暖色🍂，展現文藝氣質嚴選高質...', 
-            'image': 'images/autumn_good1.png'
-        },
-        {
-            'name':'合身短袖棉T-紅棕色',
-            'price':300,
-            'content':'告別臃腫，重塑溫暖秋日風格🥰 合身...', 
-            'image': 'images/autumn_good2.png'
-        },
-        {
-            'name':'純色大學T-卡其綠色',
-            'price':400,
-            'content':'低調卻不失格調的學院風文青感📚', 
-            'image': 'images/autumn_good3.png'
-        },
-        {
-            'name':'寬鬆亞麻短袖襯衫-芥末黃',
-            'price':400,
-            'content':'打造夏日清爽型男🍃 輕盈透氣，舒適...', 
-            'image': 'images/autumn_good4.png'
-        },
-        {
-            'name':'寬鬆袖口反摺襯衫-亞麻原色',
-            'price':599,
-            'content':'🩵清新自然時尚指標🩷 舒適透氣...', 
-            'image': 'images/autumn_good5.png'
-        },
-        {
-            'name':'鈕扣側開衩收腰長裙',
-            'price':450,
-            'content':'💼優雅氣質，展現職場女性的魅力。', 
-            'image': 'images/autumn_good6.png'
-        },
-        {
-            'name':'丹寧百褶長裙-芥末黃',
-            'price':650,
-            'content':'💃 展現復古韻味，搭配短版上衣或...', 
-            'image': 'images/autumn_good7.png'
-        },
-        {
-            'name':'經典雪紡中線西裝短褲',
-            'price':495,
-            'content':'經典簡約，百搭實穿，日常通勤皆宜🚶‍♀️', 
-            'image': 'images/autumn_good8.png'
-        }
-    ];
-
-    for (let i = 0; i < goods.length; i++) {
-         let html = '<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-2">' +
-               '<div class="card">' +
-               '<div class="card-body">' +
-               '<img class="card-img-top" src="' + goods[i].image + '" alt="' + goods[i].name + '圖片">' +
-               '<h5 class="card-title">' + goods[i].name + '</h5>' +
-               '<p class="card-price">$' + goods[i].price + '</p>' +
-               '<p class="card-content">' + goods[i].content + '</p>' +
-               '</div>' +
-               '</div>' +
-               '</div>';
-
-    $('#myGoods').append(html);       
-    }
-
-    function submitOrder() {
-    // 获取表单元素
-    var form = document.getElementById('orderForm');
-    
-    // 提交表单
-    form.submit();
-}
-</script>
 </body>
 </html>

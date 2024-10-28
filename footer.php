@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/footer.css">
     <!-- 底部區塊 -->
-    <div class="service">
+    <div class="link-service">
         <a href="https://lin.ee/bgUucMd">
            <img src="images/icon/line.png" width="100%" height="100%">
         </a>
